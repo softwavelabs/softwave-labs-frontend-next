@@ -1,0 +1,57 @@
+[
+  {
+    "id": "watch",
+    "title": "Interactive Websites",
+    "subtitle": "Engaging visuals and interactive experiences for your website.",
+    "caption": "Create captivating interactive graphics and animations that capture attention.",
+    "buttonText": "View Demos",
+    "buttonLink": "https://www.apple.com/in/apple-watch-se/",
+    "imageOriginalName": "watch.png"
+  },
+
+  {
+    "id": "iphone",
+    "title": "E-commerce",
+    "subtitle": "Grow your business with a powerful online store.",
+    "caption": "Launch and optimize online stores that attract customers, increase sales, and streamline operations.",
+    "buttonText": "Explore Stores",
+    "buttonLink": "https://www.apple.com/in/iphone-12/",
+    "imageOriginalName": "iphone.png"
+  },
+  {
+    "id": "ipad",
+    "title": "AI & Automation",
+    "subtitle": "Smarter tools to analyze data and automate processes.",
+    "caption": "Implement intelligent systems that help your business make data-driven decisions, automate repetitive tasks, and predict trends.",
+    "buttonText": "Learn More",
+    "buttonLink": "https://www.apple.com/in/ipad-pro/",
+    "imageOriginalName": "ipad.png"
+  },
+  {
+    "id": "mac",
+    "title": "UX/UI Design",
+    "subtitle": "Intuitive interfaces that elevate user experience.",
+    "caption": "Design clear, engaging, and user-friendly interfaces that strengthen your brand, increase customer satisfaction.",
+    "buttonText": "See Designs",
+    "buttonLink": "https://www.apple.com/in/macbook-pro-13/",
+    "imageOriginalName": "mac.png"
+  },
+  {
+    "id": "mouse",
+    "title": "Technical Consulting",
+    "subtitle": "Expert guidance for scalable and reliable systems.",
+    "caption": "Providing consultation on system architecture, database design, technology stack selection, and code optimization.",
+    "buttonText": "Get Consulting",
+    "buttonLink": "https://www.apple.com/in/shop/product/MLA02ZM/A/magic-mouse-2-silver",
+    "imageOriginalName": "mouse.png"
+  },
+ {
+    "id": "airpod",
+   "title": "Web applications",
+   "subtitle": "Custom web solutions tailored to your vision.",
+   "caption": "Professional web applications and fully custom websites, including intelligent features powered by machine learning.",
+   "buttonText": "See My Work",
+   "buttonLink": "https://yourwebsite.com/projects",
+    "imageOriginalName": "airpod.png"
+  }
+]
