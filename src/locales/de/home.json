@@ -1,0 +1,38 @@
+[
+  {
+    "id": "interactive",
+    "title": "Interaktive Webseiten",
+    "subtitle": "Fesselnde Visuals und interaktive Erlebnisse.",
+    "caption": "Erstellen Sie faszinierende interaktive Grafiken und Animationen, die Aufmerksamkeit erregen."
+  },
+  {
+    "id": "ecommerce",
+    "title": "E-Commerce",
+    "subtitle": "Wachsen Sie mit einem leistungsstarken Online-Shop.",
+    "caption": "Starten und optimieren Sie Online-Shops, die Kunden anziehen, den Umsatz steigern und Abläufe effizient gestalten."
+  },
+  {
+    "id": "ai",
+    "title": "KI & Automatisierung",
+    "subtitle": "Intelligentere Tools zur Datenanalyse und Prozessautomatisierung.",
+    "caption": "Implementieren Sie intelligente Systeme, die Ihrem Unternehmen helfen, datenbasierte Entscheidungen zu treffen, repetitive Aufgaben zu automatisieren und Trends vorherzusagen."
+  },
+  {
+    "id": "design",
+    "title": "UX/UI Design",
+    "subtitle": "Intuitive Oberflächen, die das Nutzererlebnis verbessern.",
+    "caption": "Gestalten Sie klare, ansprechende und benutzerfreundliche Oberflächen, die Ihre Marke stärken und die Kundenzufriedenheit erhöhen."
+  },
+  {
+    "id": "consulting",
+    "title": "Technische Beratung",
+    "subtitle": "Expertenrat für skalierbare und zuverlässige Systeme.",
+    "caption": "Beratung zu Systemarchitektur, Datenbankdesign, Auswahl des Technologiestacks und Code-Optimierung."
+  },
+  {
+    "id": "web",
+    "title": "Webanwendungen",
+    "subtitle": "Individuelle Weblösungen, die Ihrer Vision entsprechen.",
+    "caption": "Professionelle Webanwendungen und vollständig maßgeschneiderte Websites, einschließlich intelligenter Funktionen auf Basis von maschinellem Lernen."
+  }
+]

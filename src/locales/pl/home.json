@@ -1,0 +1,38 @@
+[
+  {
+    "id": "interactive",
+    "title": "Interaktywne strony internetowe",
+    "subtitle": "Angażujące wizualizacje i interaktywne doświadczenia.",
+    "caption": "Twórz przyciągające uwagę interaktywne grafiki i animacje."
+  },
+  {
+    "id": "ecommerce",
+    "title": "E-commerce",
+    "subtitle": "Rozwijaj swoją firmę dzięki potężnemu sklepowi online.",
+    "caption": "Uruchamiaj i optymalizuj sklepy internetowe, które przyciągają klientów, zwiększają sprzedaż i usprawniają działanie."
+  },
+  {
+    "id": "ai",
+    "title": "AI i Automatyzacja",
+    "subtitle": "Inteligentniejsze narzędzia do analizy danych i automatyzacji procesów.",
+    "caption": "Wdrażaj inteligentne systemy, które pomagają Twojej firmie podejmować decyzje oparte na danych, automatyzować powtarzalne zadania i przewidywać trendy."
+  },
+  {
+    "id": "design",
+    "title": "UX/UI Design",
+    "subtitle": "Intuicyjne interfejsy, które podnoszą doświadczenie użytkownika.",
+    "caption": "Projektuj przejrzyste, angażujące i przyjazne dla użytkownika interfejsy, które wzmacniają markę i zwiększają satysfakcję klientów."
+  },
+  {
+    "id": "consulting",
+    "title": "Konsulting techniczny",
+    "subtitle": "Eksperckie doradztwo dla skalowalnych i niezawodnych systemów.",
+    "caption": "Konsultacje dotyczące architektury systemów, projektowania baz danych, wyboru stosu technologicznego i optymalizacji kodu."
+  },
+  {
+    "id": "web",
+    "title": "Aplikacje internetowe",
+    "subtitle": "Dostosowane do Twojej wizji rozwiązania webowe.",
+    "caption": "Profesjonalne aplikacje internetowe i w pełni niestandardowe strony internetowe, w tym inteligentne funkcje oparte na uczeniu maszynowym."
+  }
+]

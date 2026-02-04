@@ -1,0 +1,38 @@
+[
+  {
+    "id": "interactive",
+    "title": "Gagnvirkar vefsíður",
+    "subtitle": "Heillandi sjónræn framsetning og gagnvirk upplifun.",
+    "caption": "Búðu til heillandi gagnvirka grafík og hreyfimyndir sem fanga athygli."
+  },
+  {
+    "id": "ecommerce",
+    "title": "Netverslun",
+    "subtitle": "Efldu fyrirtækið þitt með öflugri netverslun.",
+    "caption": "Settu í loftið og hagræddu netverslunum sem laða að viðskiptavini, auka sölu og einfalda rekstur."
+  },
+  {
+    "id": "ai",
+    "title": "Gervigreind og sjálfvirknivæðing",
+    "subtitle": "Snjallari verkfæri til að greina gögn og sjálfvirknivæða ferla.",
+    "caption": "Innleiddu greind kerfi sem hjálpa fyrirtækinu þínu að taka gagnadrifnar ákvarðanir, sjálfvirknivæða endurtekin verkefni og spá fyrir um þróun."
+  },
+  {
+    "id": "design",
+    "title": "UX/UI hönnun",
+    "subtitle": "Innsæi viðmót sem lyfta notendaupplifun.",
+    "caption": "Hannaðu skýr, aðlaðandi og notendavæn viðmót sem styrkja vörumerkið þitt og auka ánægju viðskiptavina."
+  },
+  {
+    "id": "consulting",
+    "title": "Tækniráðgjöf",
+    "subtitle": "Sérfræðiráðgjöf fyrir skalanleg og áreiðanleg kerfi.",
+    "caption": "Ráðgjöf um kerfisarkitektúr, gagnagrunnshönnun, val á tæknistafla og kóðahagræðingu."
+  },
+  {
+    "id": "web",
+    "title": "Vefumsóknir",
+    "subtitle": "Sérsniðnar veflausnir að þinni sýn.",
+    "caption": "Faglegar vefumsóknir og fullkomlega sérsniðnar vefsíður, þar á meðal snjallir eiginleikar knúnir af vélanámi."
+  }
+]

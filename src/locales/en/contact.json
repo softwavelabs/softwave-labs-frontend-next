@@ -1,0 +1,17 @@
+{
+  "title": "Contact",
+  "subtitle": "Let us know how we can help you.",
+  "email": {
+    "label": "Your email",
+    "placeholder": "name@email.com"
+  },
+  "subject": {
+    "label": "subject",
+    "placeholder": "Let us know how we can help you"
+  },
+  "message": {
+    "label": "Your message",
+    "placeholder": "Leave your message here..."
+  },
+  "sendButton": "Send Message"
+}

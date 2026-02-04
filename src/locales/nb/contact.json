@@ -1,0 +1,17 @@
+{
+  "title": "Kontakt",
+  "subtitle": "Fortell oss hvordan vi kan hjelpe deg.",
+  "email": {
+    "label": "Din e-post",
+    "placeholder": "navn@epost.no"
+  },
+  "subject": {
+    "label": "Emne",
+    "placeholder": "Fortell oss hvordan vi kan hjelpe deg"
+  },
+  "message": {
+    "label": "Din melding",
+    "placeholder": "Skriv meldingen din her..."
+  },
+    "sendButton": "Send melding"
+}

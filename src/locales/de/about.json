@@ -1,0 +1,24 @@
+{
+  "title": "Über uns",
+  "subtitle": "Wer wir sind und was wir erschaffen.",
+  "paragraphs": [
+    "Das Konzept für unser Unternehmen entstand 2024, und offiziell gestartet sind wir 2025. Seitdem haben wir uns als Team zusammengefunden und eine vielfältige Expertise in modernen Technologien und kreativen Disziplinen kombiniert.",
+    "Unser Skillset umfasst mehrere Programmiersprachen, Softwaretests, SEO, Hosting-Lösungen, kreative Installationen und Grafikdesign. Diese breite Grundlage ermöglicht es uns, Projekte ganzheitlich anzugehen – vom Konzept und Design bis zur Entwicklung und Implementierung.",
+    "Unser Wissen wurde durch eine Vielzahl spannender Projekte geformt, an denen wir teilnehmen durften. Jede Zusammenarbeit hat unsere Fähigkeit gestärkt, durchdachte, zuverlässige und wirkungsvolle digitale Lösungen zu liefern.",
+    "Heute liegt unser Hauptfokus auf dem skandinavischen Markt, wo wir eine wachsende Nachfrage nach modernen, hochwertigen IT-Lösungen sehen. Unser Ziel ist es, diese Nachfrage durch technische Präzision mit einem innovativen und zukunftsorientierten Ansatz zu erfüllen."
+  ],
+  "values": [
+    {
+      "title": "Präzision",
+      "description": "Sauberer Code, klare Struktur und Liebe zum Detail in allem, was wir erschaffen."
+    },
+    {
+      "title": "Innovation",
+      "description": "Wir überschreiten Grenzen und erkunden neue Ideen, um Lösungen zu schaffen, die herausstechen."
+    },
+    {
+      "title": "Zuverlässigkeit",
+      "description": "Langfristige Partnerschaften, die auf Vertrauen, Transparenz und konsistenter Lieferung basieren."
+    }
+  ]
+}

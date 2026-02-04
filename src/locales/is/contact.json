@@ -1,0 +1,17 @@
+{
+  "title": "Hafa samband",
+  "subtitle": "Láttu okkur vita hvernig við getum aðstoðað þig.",
+  "email": {
+    "label": "Netfangið þitt",
+    "placeholder": "nafn@netfang.is"
+  },
+  "subject": {
+    "label": "Efni",
+    "placeholder": "Láttu okkur vita hvernig við getum aðstoðað þig"
+  },
+  "message": {
+    "label": "Skilaboðin þín",
+    "placeholder": "Skrifaðu skilaboðin þín hér..."
+  },
+  "sendButton": "Senda skilaboð"
+}

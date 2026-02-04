@@ -1,0 +1,39 @@
+[
+  {
+    "id": "interactive",
+    "title": "Interactive Websites",
+    "subtitle": "Engaging visuals and interactive experiences.",
+    "caption": "Create captivating interactive graphics and animations that capture attention."
+  },
+
+  {
+    "id": "ecommerce",
+    "title": "E-commerce",
+    "subtitle": "Grow your business with a powerful online store.",
+    "caption": "Launch and optimize online stores that attract customers, increase sales, and streamline operations."
+  },
+  {
+    "id": "ai",
+    "title": "AI & Automation",
+    "subtitle": "Smarter tools to analyze data and automate processes.",
+    "caption": "Implement intelligent systems that help your business make data-driven decisions, automate repetitive tasks, and predict trends."
+  },
+  {
+    "id": "design",
+    "title": "UX/UI Design",
+    "subtitle": "Intuitive interfaces that elevate user experience.",
+    "caption": "Design clear, engaging, and user-friendly interfaces that strengthen your brand, increase customer satisfaction."
+  },
+  {
+    "id": "consulting",
+    "title": "Technical Consulting",
+    "subtitle": "Expert guidance for scalable and reliable systems.",
+    "caption": "Consultation on system architecture, database design, technology stack selection, and code optimization."
+  },
+  {
+    "id": "web",
+    "title": "Web applications",
+    "subtitle": "Custom web solutions tailored to your vision.",
+    "caption": "Professional web applications and fully custom websites, including intelligent features powered by machine learning."
+  }
+]

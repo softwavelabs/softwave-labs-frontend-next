@@ -1,0 +1,17 @@
+{
+  "title": "Kontakt",
+  "subtitle": "Daj nam znać, jak możemy Ci pomóc.",
+  "email": {
+    "label": "Twój e-mail",
+    "placeholder": "nazwa@email.pl"
+  },
+  "subject": {
+    "label": "Temat",
+    "placeholder": "Daj nam znać, jak możemy Ci pomóc"
+  },
+  "message": {
+    "label": "Twoja wiadomość",
+    "placeholder": "Wpisz swoją wiadomość tutaj..."
+  },
+    "sendButton": "Wyślij wiadomość"
+}

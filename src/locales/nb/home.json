@@ -1,0 +1,38 @@
+[
+  {
+    "id": "interactive",
+    "title": "Interaktive nettsider",
+    "subtitle": "Engasjerende visuelle uttrykk og interaktive opplevelser.",
+    "caption": "Skap fengende interaktiv grafikk og animasjoner som fanger oppmerksomhet."
+  },
+  {
+    "id": "ecommerce",
+    "title": "Nettbutikk",
+    "subtitle": "Utvikle virksomheten din med en kraftig nettbutikk.",
+    "caption": "Lanser og optimaliser nettbutikker som tiltrekker kunder, øker salget og effektiviserer driften."
+  },
+  {
+    "id": "ai",
+    "title": "KI og automatisering",
+    "subtitle": "Smartere verktøy for dataanalyse og automatisering av prosesser.",
+    "caption": "Implementer intelligente systemer som hjelper virksomheten din med datadrevne beslutninger, automatisering av repetitive oppgaver og prediksjon av trender."
+  },
+  {
+    "id": "design",
+    "title": "UX/UI-design",
+    "subtitle": "Intuitive grensesnitt som løfter brukeropplevelsen.",
+    "caption": "Design klare, engasjerende og brukervennlige grensesnitt som styrker merkevaren din og øker kundetilfredsheten."
+  },
+  {
+    "id": "consulting",
+    "title": "Teknisk rådgivning",
+    "subtitle": "Ekspertveiledning for skalerbare og pålitelige systemer.",
+    "caption": "Rådgivning innen systemarkitektur, databasedesign, valg av teknologistack og kodeoptimalisering."
+  },
+  {
+    "id": "web",
+    "title": "Webapplikasjoner",
+    "subtitle": "Skreddersydde webløsninger tilpasset din visjon.",
+    "caption": "Profesjonelle webapplikasjoner og fullt tilpassede nettsider, inkludert intelligente funksjoner drevet av maskinlæring."
+  }
+]

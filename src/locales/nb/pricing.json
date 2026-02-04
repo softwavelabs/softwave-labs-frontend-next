@@ -1,0 +1,10 @@
+{
+  "bundlesTitle": "Pakker",
+  "bundlesSubtitle": "Enkle pakker. Ingen skjulte kostnader.",
+  "servicesTitle": "Tjenester",
+  "servicesSubtitle": "Enkeltjenester tilpasset dine spesifikke behov.",
+  "contactTitle": "Need something custom? Reach out via the contact form.",
+  "contactUsButton": "Contact Us",
+  "price": "od {price}{currency} netto",
+  "getBundle": "Få {bundle}-pakke"
+}

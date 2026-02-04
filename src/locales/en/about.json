@@ -1,0 +1,24 @@
+{
+  "title": "About Us",
+  "subtitle": "Who we are and what we build.",
+  "paragraphs": [
+    "The concept for our company was born in 2024, and we officially launched in 2025. Since then, we have come together as a team, combining a diverse range of expertise across modern technologies and creative disciplines.",
+    "Our skill set spans multiple programming languages, software testing, SEO, hosting solutions, creative installations, and graphic design. This broad foundation allows us to approach projects holistically — from concept and design to development and deployment.",
+    "Our knowledge has been shaped through a wide range of exciting projects that we have had the opportunity to be part of. Each collaboration has strengthened our ability to deliver thoughtful, reliable, and impactful digital solutions.",
+    "Today, our primary focus is the Scandinavian market, where we see a growing demand for modern, high-quality IT solutions. Our goal is to meet this demand by combining technical precision with an innovative and forward-thinking approach."
+  ],
+  "values": [
+    {
+      "title": "Precision",
+      "description": "Clean code, clear structure, and attention to detail in everything we build."
+    },
+    {
+      "title": "Innovation",
+      "description": "We push boundaries and explore new ideas to create solutions that stand out."
+    },
+    {
+      "title": "Reliability",
+      "description": "Long-term partnerships built on trust, transparency, and consistent delivery."
+    }
+  ]
+}

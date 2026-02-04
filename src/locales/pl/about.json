@@ -1,0 +1,24 @@
+{
+  "title": "O nas",
+  "subtitle": "Kim jesteśmy i co tworzymy.",
+  "paragraphs": [
+    "Koncepcja naszej firmy powstała w 2024 roku, a oficjalnie rozpoczęliśmy działalność w 2025 roku. Od tego czasu stworzyliśmy zespół, łącząc różnorodne doświadczenie w nowoczesnych technologiach i dziedzinach kreatywnych.",
+    "Nasze umiejętności obejmują wiele języków programowania, testowanie oprogramowania, SEO, rozwiązania hostingowe, instalacje kreatywne i projektowanie graficzne. Ta szeroka baza pozwala nam podchodzić do projektów w sposób całościowy – od koncepcji i projektu po rozwój i wdrożenie.",
+    "Nasza wiedza kształtowała się poprzez udział w różnorodnych, ekscytujących projektach. Każda współpraca wzmocniła naszą zdolność do dostarczania przemyślanych, niezawodnych i efektywnych rozwiązań cyfrowych.",
+    "Obecnie naszym głównym obszarem działania jest rynek skandynawski, gdzie obserwujemy rosnące zapotrzebowanie na nowoczesne, wysokiej jakości rozwiązania IT. Naszym celem jest sprostanie temu zapotrzebowaniu poprzez połączenie precyzji technicznej z innowacyjnym i przyszłościowym podejściem."
+  ],
+  "values": [
+    {
+      "title": "Precyzja",
+      "description": "Czysty kod, klarowna struktura i dbałość o szczegóły we wszystkim, co tworzymy."
+    },
+    {
+      "title": "Innowacja",
+      "description": "Przekraczamy granice i eksplorujemy nowe pomysły, tworząc wyróżniające się rozwiązania."
+    },
+    {
+      "title": "Niezawodność",
+      "description": "Długoterminowe partnerstwa oparte na zaufaniu, przejrzystości i konsekwentnej realizacji."
+    }
+  ]
+}
