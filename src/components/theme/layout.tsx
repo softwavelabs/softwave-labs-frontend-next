@@ -1,23 +1,35 @@
+import React, { ReactNode } from "react";
 import "./layout.css";
 
-const Layout = ({ children, theme }) => {
-  return (
-    <div
-      sx={{
-        pl: [1, 2, 3],
-        pr: [1, 2, 3],
-        pt: [1, 2, 3],
+interface DeviceColors {
+    background: string;
+    text?: string;
+    primary?: string;
+    secondary?: string;
+}
 
-        display: "flex",
-        flexDirection: "column",
-        height: "100%",
-        width: "100%",
-        bg: theme["background"],
-      }}
-    >
-      {children}
-    </div>
-  );
+interface LayoutProps {
+    children: ReactNode;
+    theme: DeviceColors;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, theme }) => {
+    return (
+        <div
+            style={{
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
+                paddingTop: "1rem",
+                display: "flex",
+                flexDirection: "column",
+                height: "100%",
+                width: "100%",
+                backgroundColor: theme.background,
+            }}
+        >
+            {children}
+        </div>
+    );
 };
 
 export default Layout;

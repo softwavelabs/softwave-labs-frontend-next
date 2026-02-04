@@ -22,8 +22,9 @@ export async function GET(req: NextRequest) {
         }
 
         return NextResponse.json(currency);
-    } catch (err: any) {
-        console.error("Error fetching currency from Strapi:", err.message);
-        return NextResponse.json({ error: err.message || "Strapi fetch failed" }, { status: 500 });
+    } catch (err: unknown) {
+        const errorMessage = err instanceof Error ? err.message : String(err);
+        console.error("Error fetching bundles from Strapi:", errorMessage);
+        return NextResponse.json({ error: errorMessage || "Strapi fetch failed" }, { status: 500 });
     }
 }

@@ -6,12 +6,40 @@ import { useThemeStore } from "@/store/themeStore";
 import { getColorsByIndex } from "@/components/theme/Colors";
 import { useLocale } from "@/app/contexts/LocaleContext";
 
+interface Author {
+    name: string;
+    title?: string;
+    email?: string;
+    avatar?: { url: string };
+    description?: string;
+}
+
+interface Cover {
+    url: string;
+    caption?: string;
+}
+
+interface Category {
+    id: number;
+    name: string;
+}
+
+interface Article {
+    id: number;
+    slug: string;
+    title: string;
+    description?: string;
+    createdAt?: string;
+    author?: Author;
+    cover?: Cover;
+    categories?: { data: Category[] };
+}
 const Articles = () => {
-    const [articles, setArticles] = useState<any[]>([]);
+    const [articles, setArticles] = useState<Article[]>([]);
     const [search, setSearch] = useState("");
     const router = useRouter();
     const activeIndex = useThemeStore((state) => state.activeIndex);
-    const { background, text, primary, secondary } = getColorsByIndex(activeIndex);
+    const { background, primary } = getColorsByIndex(activeIndex);
     const { locale } = useLocale();
 
     useEffect(() => {

@@ -30,7 +30,7 @@ const getInitialIndex = () => {
     }
 
     const saved = localStorage.getItem("liquidSwipeIndex");
-    let parsed = saved ? Number(saved) : 0;
+    const parsed = saved ? Number(saved) : 0;
 
     if (isNaN(parsed) || parsed === 5) {
         return 0;
@@ -39,13 +39,9 @@ const getInitialIndex = () => {
     return parsed;
 };
 
-
-
-
-
 const PageDiv = styled.div.withConfig({
-    shouldForwardProp: (prop) => prop !== "themeColor" && prop !== "isGone",
-})<{ themeColor: string; isGone: boolean }>`
+    shouldForwardProp: (prop) => prop !== "theme" && prop !== "isGone",
+})<{ theme: string; isGone: boolean }>`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -54,14 +50,13 @@ const PageDiv = styled.div.withConfig({
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  background-color: ${(props) => props.themeColor};
+  background-color: ${(props) => props.theme};
   transition: background-color 0.3s ease;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 `;
-
 
 const StyledSVG = styled.svg`
   position: absolute;
@@ -82,7 +77,6 @@ const getPath = (y: number, x: number, width: number, height: number): string =>
 interface PageProps {
     children: ReactNode;
     theme: string;
-    themeColor: string;
     index: number;
     setActive: (index: number) => void;
     gone?: boolean;
@@ -96,7 +90,6 @@ const Page: React.FC<PageProps> = ({
                                        gone = false,
                                    }) => {
     const [isGone, setGone] = useState<boolean>(gone);
-    const [isMove, setMove] = useState<boolean>(false);
 
     const initializedRef = useRef(false);
 
@@ -106,7 +99,6 @@ const Page: React.FC<PageProps> = ({
     });
 
     useEffect(() => {
-
         const updateDimensions = () => {
             setDimensions({
                 width: window.innerWidth,
@@ -122,7 +114,7 @@ const Page: React.FC<PageProps> = ({
 
     const { width, height } = dimensions;
 
-    const [{ posX, posY }, setPosApi] = useSpring(() => ({
+    const [, setPosApi] = useSpring(() => ({
         posX: -50,
         posY: height * 0.72 - 20,
         config: { mass: 3 },
@@ -168,14 +160,11 @@ const Page: React.FC<PageProps> = ({
                 return;
             }
 
-
-
             const mx = movement[0];
             const my = xy[1];
             const vx = vxvy[0];
 
             const shouldSwipe = mx > width / 2 || vx > 3;
-
 
             if (down) {
                 setDvalueApi.start({
@@ -222,11 +211,10 @@ const Page: React.FC<PageProps> = ({
 
     const handleStart = () => {
         if (isGone) return;
-        setMove(true);
     };
+
     const handleEnd = () => {
         if (isGone) return;
-        setMove(false);
     };
 
     return (
@@ -234,14 +222,14 @@ const Page: React.FC<PageProps> = ({
             <StyledSVG width="100%" height="100%" viewBox={`0 0 ${width} ${height}`}>
                 <clipPath id={`clipping${index}`}>
                     <animated.path
-                        id={`blob-path${index}` as any}
-                        d={d as any}
+                        id={`blob-path${index}`}
+                        d={d as unknown as string}
                     />
                 </clipPath>
             </StyledSVG>
 
             <PageDiv
-                themeColor={theme}
+                theme={theme}
                 {...bind()}
                 isGone={isGone}
                 onMouseDown={handleStart}
@@ -272,7 +260,6 @@ export const LiquidSwipe: React.FC<LiquidSwipeProps> = ({
     const initialIndex = getInitialIndex();
     const validInitialIndex = initialIndex >= 0 && initialIndex < size ? initialIndex : 0;
 
-
     const [activeIndex, setActive] = useState(validInitialIndex);
     const [isInitialized, setIsInitialized] = useState(false);
 
@@ -287,9 +274,7 @@ export const LiquidSwipe: React.FC<LiquidSwipeProps> = ({
     const lastAddedRef = useRef<string>(`${validInitialIndex}-0`);
 
     useEffect(() => {
-
         if (!isInitialized) {
-
             setPages([
                 <Page
                     key={`${validInitialIndex}-0`}

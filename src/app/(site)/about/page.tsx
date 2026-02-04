@@ -11,8 +11,10 @@ interface ValueItem {
 const AboutPage: React.FC = () => {
     const { locale } = useLocale();
     const { dictionary, loading } = useDictionary(locale, "about");
-    const paragraphs = dictionary?.paragraphs || [];
-    const values: ValueItem[] = dictionary?.values || [];
+
+    const paragraphs = Array.isArray(dictionary?.paragraphs) ? dictionary.paragraphs : [];
+    const values: ValueItem[] = Array.isArray(dictionary?.values) ? dictionary.values : [];
+
     const t = (key: string, fallback: string) =>
         loading ? fallback : (dictionary[key] ?? fallback);
 
@@ -48,10 +50,7 @@ const AboutPage: React.FC = () => {
                         {loading
                             ? null
                             : values.map(
-                                (
-                                    v: { title: string; description: string },
-                                    index: number
-                                ) => (
+                                (v: ValueItem, index: number) => (
                                     <div key={index}>
                                         <h3 className="font-bold mb-2">{v.title}</h3>
                                         <p className="opacity-80">{v.description}</p>

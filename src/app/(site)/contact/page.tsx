@@ -9,17 +9,40 @@ interface FormItem {
     label: string;
     placeholder: string;
 }
+
+interface ContactDictionary {
+    email: FormItem;
+    subject: FormItem;
+    message: FormItem;
+    title: string;
+    subtitle: string;
+    sendButton: string;
+}
+
+
 const ContactPage: React.FC = () => {
     const { locale } = useLocale();
     const { dictionary, loading } = useDictionary(locale, "contact");
-    const email: FormItem = dictionary?.email || [];
-    const subject: FormItem = dictionary?.subject || [];
-    const message: FormItem = dictionary?.message || [];
     const searchParams = useSearchParams();
     const subjectFromQuery = searchParams.get("subject") || "";
+    const email: FormItem =
+        dictionary?.email && typeof dictionary.email === "object"
+            ? dictionary.email
+            : { label: "", placeholder: "" };
 
-    const t = (key: string, fallback: string) =>
-        loading ? fallback : (dictionary[key] ?? fallback);
+    const subject: FormItem =
+        dictionary?.subject && typeof dictionary.subject === "object"
+            ? dictionary.subject
+            : { label: "", placeholder: "" };
+
+    const message: FormItem =
+        dictionary?.message && typeof dictionary.message === "object"
+            ? dictionary.message
+            : { label: "", placeholder: "" };
+
+
+    const t = (key: keyof ContactDictionary, fallback: string) =>
+        loading ? fallback : (dictionary?.[key] ?? fallback);
     return (
         <div
             className="w-full flex justify-center"

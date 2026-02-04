@@ -5,7 +5,33 @@ import { useLocale } from "@/app/contexts/LocaleContext";
 import { useDictionary } from "@/app/hooks/useDictionary";
 import { useRouter } from "next/navigation";
 
-const BundleButton = ({ bundle, t }: { bundle: any; t: Function }) => {
+interface ScopeItem {
+    children?: Array<{ text: string }>;
+}
+
+interface Bundle {
+    id: number;
+    title: string;
+    description: string;
+    price: string;
+    scope?: ScopeItem[];
+}
+
+interface Service {
+    id: number;
+    name: string;
+    description: string;
+    price: string;
+    scope?: ScopeItem[];
+}
+
+interface Currency {
+    code: string;
+}
+
+type TranslationFunction = (key: string, fallback: string) => string;
+
+const BundleButton = ({ bundle, t }: { bundle: Bundle; t: TranslationFunction }) => {
     const router = useRouter();
 
     const handleClick = () => {
@@ -29,15 +55,15 @@ const PricingPage: React.FC = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
     const { locale } = useLocale();
     const { dictionary } = useDictionary(locale, "pricing");
-    const [bundles, setBundles] = useState<any[]>([]);
-    const [services, setServices] = useState<any[]>([]);
+    const [bundles, setBundles] = useState<Bundle[]>([]);
+    const [services, setServices] = useState<Service[]>([]);
     const [currency, setCurrency] = useState<string>("NONE");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(false);
 
-    const t = (key: string, fallback: string) =>
+    const t: TranslationFunction = (key: string, fallback: string) =>
         loading ? fallback : dictionary[key] ?? fallback;
 
     const updateScrollButtons = useCallback(() => {
@@ -61,8 +87,8 @@ const PricingPage: React.FC = () => {
 
                 setBundles(bundlesRes || []);
                 setServices(servicesRes || []);
-                setCurrency(currencyRes?.code || "NONE");
-            } catch (err: any) {
+                setCurrency((currencyRes as Currency)?.code || "NONE");
+            } catch (err) {
                 console.error("Error fetching pricing data:", err);
                 setError("Failed to load pricing data");
             } finally {
@@ -131,9 +157,9 @@ const PricingPage: React.FC = () => {
                                     <div className="text-3xl font-bold mb-6">
                                         {t("price", "from").replace("{price}", bundle.price).replace("{currency}", currency)}
                                     </div>
-                                    {bundle.scope?.length > 0 && (
+                                    {bundle.scope && bundle.scope.length > 0 && (
                                         <ul className="text-sm mb-8 space-y-2">
-                                            {bundle.scope.map((item: any, idx: number) => (
+                                            {bundle.scope.map((item: ScopeItem, idx: number) => (
                                                 <li key={idx} className="flex gap-2">
                                                     <span></span>
                                                     <span>{item.children?.[0]?.text}</span>
@@ -150,14 +176,18 @@ const PricingPage: React.FC = () => {
                             onClick={() => scroll("right")}
                             className={`px-4 py-2 text-sm flex-shrink-0 transition-opacity ${!canScrollRight ? "opacity-0 pointer-events-none" : ""}`}
                         >
-                            <span className="block w-3 h-3 border-t-2 border-r-2 border-black rotate-45"></span>
+                            <span className="block w-3 h-3 border-t-2 border-r-2 rotate-45"></span>
                         </button>
                     </div>
+
+                    {/*<div className="my-16 border-t-4" />*/}
 
                     <div className="mt-16 mb-16 text-center">
                         <h1 className="text-3xl sm:text-4xl font-bold mb-4">{t("servicesTitle", "")}</h1>
                         <p className="text-sm opacity-80">{t("servicesSubtitle", "")}</p>
                     </div>
+
+
 
                     <table className="w-full text-left">
                         <thead>
@@ -177,7 +207,7 @@ const PricingPage: React.FC = () => {
                                 </td>
                                 <td className="px-6 py-5 text-sm">
                                     <ul className="space-y-1">
-                                        {service.scope?.map((f: any, idx: number) => (
+                                        {service.scope?.map((f: ScopeItem, idx: number) => (
                                             <li key={idx}>{f.children?.[0]?.text ?? ""}</li>
                                         ))}
                                     </ul>

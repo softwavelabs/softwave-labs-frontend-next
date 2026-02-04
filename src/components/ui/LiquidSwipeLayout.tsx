@@ -5,15 +5,37 @@ import Showcase from "./Showcase";
 import Footer from "../theme/Footer";
 import { Colors } from "../theme/Colors";
 import conceptData from "@/data/conceptData.json";
+import type { DeviceColors} from "@/app/types/colors";
 
-export const LiquidSwipeLayout = ({ data }: any) => {
-    const selectedColor = Colors[data.order];
+interface PageData {
+    id: number;
+    documentId?: string;
+    title: string;
+    subtitle?: string;
+    description?: string;
+    order?: number;
+    [key: string]: unknown;
+}
+
+interface LiquidSwipeLayoutProps {
+    data: PageData;
+}
+
+
+interface LiquidSwipeLayoutProps {
+    data: PageData;
+    color?: DeviceColors;
+}
+
+export const LiquidSwipeLayout: React.FC<LiquidSwipeLayoutProps> = ({ data, color }) => {
+    const selectedColor = color ?? Colors[data.order ?? 0] ?? { background: "#000000", text: "#FFFFFF" };
 
     return (
         <Layout theme={selectedColor}>
-            <Header data={data} theme={selectedColor} />
+            <Header theme={selectedColor} />
             <Showcase data={data} theme={selectedColor} />
             <Footer data={conceptData} theme={selectedColor} />
         </Layout>
     );
 };
+

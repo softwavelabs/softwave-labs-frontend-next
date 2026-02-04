@@ -19,12 +19,13 @@ class StrapiClient {
         });
     }
 
-    async fetch(endpoint: string, params?: Record<string, any>) {
+    async fetch(endpoint: string, params?: Record<string, string | number | boolean | string[]>) {
         try {
             const res = await this.client.get(`/api/${endpoint}`, { params });
             return res.data.data;
-        } catch (err: any) {
-            console.error(`[StrapiClient] Error fetching ${endpoint}:`, err.message);
+        } catch (err: unknown) {
+            const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+            console.error(`[StrapiClient] Error fetching ${endpoint}:`, errorMessage);
             throw err;
         }
     }

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import type p5 from "p5";
 
 interface DeviceColors {
     background: string;
@@ -13,11 +14,12 @@ interface TixyPatternProps {
 
 const TixyPattern: React.FC<TixyPatternProps> = ({ theme }) => {
     const containerRef = useRef<HTMLDivElement>(null);
-    const p5Instance = useRef<any>(null);
+    const p5Instance = useRef<p5 | null>(null);
 
     useEffect(() => {
-        if (p5Instance.current) {
-            p5Instance.current.remove();
+        const instance = p5Instance.current;
+        if (instance) {
+            instance.remove();
             p5Instance.current = null;
         }
 
@@ -26,11 +28,11 @@ const TixyPattern: React.FC<TixyPatternProps> = ({ theme }) => {
         }
 
         import("p5").then((p5Module) => {
-            const p5 = p5Module.default;
+            const P5 = p5Module.default;
             const primaryColor = theme.primary ?? "#00ffaa";
             const secondaryColor = theme.secondary ?? "#000";
 
-            const sketch = (p: any) => {
+            const sketch = (p: p5) => {
                 const rows = 40;
                 const cols = 40;
                 const diameter = 7;
@@ -84,14 +86,12 @@ const TixyPattern: React.FC<TixyPatternProps> = ({ theme }) => {
                 };
             };
 
-            p5Instance.current = new p5(sketch);
+            p5Instance.current = new P5(sketch);
         });
 
         return () => {
-            if (p5Instance.current) {
-                p5Instance.current.remove();
-                p5Instance.current = null;
-            }
+            p5Instance.current?.remove();
+            p5Instance.current = null;
         };
     }, [theme]);
 

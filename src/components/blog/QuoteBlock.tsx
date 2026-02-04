@@ -1,23 +1,21 @@
 import React from "react";
-
+import type { QuoteNode } from "@/components/blog/types/quote";
+interface QuoteChild {
+    type: string;
+    text: string;
+}
 interface QuoteBlockProps {
     block: {
-        title: Array<{
-            type: string;
-            children: Array<{
-                type: string;
-                text: string;
-            }>;
-        }>;
+        title: QuoteNode[];
     };
 }
 
 const QuoteBlock: React.FC<QuoteBlockProps> = ({ block }) => {
-    const extractText = (content: any[]) => {
+    const extractText = (content: QuoteNode[]) => {
         if (!Array.isArray(content)) return '';
         return content
             .map(node =>
-                node.children?.map((child: any) => child.text).join('') || ''
+                node.children?.map((child: QuoteChild) => child.text).join('') || ''
             )
             .join(' ');
     };

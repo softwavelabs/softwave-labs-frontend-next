@@ -1,14 +1,60 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useCallback } from "react";
+import type {
+    ListItemNode,
+} from "./types/markdown";
 
 interface RichTextBlockProps {
     block: {
-        body: Array<any>;
+        body: RichTextNode[];
+    };
+}
+
+interface TextChild {
+    type: "text";
+    text?: string;
+    bold?: boolean;
+    italic?: boolean;
+    underline?: boolean;
+    strikethrough?: boolean;
+}
+
+interface LinkChild {
+    type: "link";
+    url?: string;
+    children?: RichTextChild[];
+}
+
+type RichTextChild = TextChild | LinkChild;
+
+interface ParagraphNode {
+    type: "paragraph";
+    children?: RichTextChild[];
+}
+
+interface HeadingNode {
+    type: "heading";
+    level?: number;
+    children?: RichTextChild[];
+}
+
+
+interface ListNode {
+    type: "list";
+    format?: "ordered" | "unordered";
+    children?: ListItemNode[];
+}
+
+type RichTextNode = ParagraphNode | HeadingNode | ListNode;
+
+interface RichTextBlockProps {
+    block: {
+        body: RichTextNode[];
     };
 }
 
 const RichTextBlock: React.FC<RichTextBlockProps> = ({ block }) => {
 
-    const convertChildrenToHtml = (children: Array<any>): string => {
+    const convertChildrenToHtml = useCallback((children: RichTextChild[]): string => {
         return children
             .map((child) => {
                 if (child.type === "text") {
@@ -27,7 +73,7 @@ const RichTextBlock: React.FC<RichTextBlockProps> = ({ block }) => {
                 }
             })
             .join("");
-    };
+    }, []);
 
     const renderedHtml = useMemo(() => {
         if (!block.body || !Array.isArray(block.body)) return "<p>No content</p>";
@@ -43,7 +89,7 @@ const RichTextBlock: React.FC<RichTextBlockProps> = ({ block }) => {
                     case "list":
                         const tag = b.format === "ordered" ? "ol" : "ul";
                         const items = (b.children || [])
-                            .map((item: any) => `<li>${convertChildrenToHtml(item.children || [])}</li>`)
+                            .map((item: ListItemNode) => `<li>${convertChildrenToHtml(item.children || [])}</li>`)
                             .join("");
                         return `<${tag}>${items}</${tag}>`;
                     default:
@@ -51,7 +97,7 @@ const RichTextBlock: React.FC<RichTextBlockProps> = ({ block }) => {
                 }
             })
             .join("");
-    }, [block]);
+    }, [block, convertChildrenToHtml]);
 
     return <div dangerouslySetInnerHTML={{ __html: renderedHtml }} />;
 };

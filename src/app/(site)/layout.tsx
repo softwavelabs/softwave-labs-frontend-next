@@ -26,7 +26,15 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
 
                 <main>{children}</main>
 
-                <Footer data={conceptData} theme={{ background, text, primary, secondary }} />
+                <Footer
+                    data={conceptData}
+                    theme={{
+                        background,
+                        text: text || "#000000",
+                        primary,
+                        secondary,
+                    }}
+                />
             </Layout>
         </div>
     );

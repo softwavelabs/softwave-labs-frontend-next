@@ -6,9 +6,22 @@ import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { useLocale } from "@/app/contexts/LocaleContext";
 import { useDictionary } from "@/app/hooks/useDictionary";
+import type { DeviceColors } from "@/app/types/colors";
 
-const Footer = ({ data, theme }) => {
-    // ← hooki muszą być TU, wewnątrz komponentu
+interface FooterData {
+    linkedin?: string;
+    instagram?: string;
+    github?: string;
+    behance?: string;
+    [key: string]: unknown;
+}
+
+interface FooterProps {
+    data: FooterData;
+    theme: DeviceColors;
+}
+
+const Footer: React.FC<FooterProps> = ({ data, theme }) => {
     const { locale } = useLocale();
     const { dictionary, loading } = useDictionary(locale, "footer");
 
@@ -30,25 +43,30 @@ const Footer = ({ data, theme }) => {
 
     return (
         <footer className="pt-6 pb-10 bg-transparent">
-            {/* Ikony społecznościowe */}
             <div className="flex justify-center items-center gap-4 mb-4">
-                <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin style={iconStyle} />
-                </a>
-                <a href={data.instagram} target="_blank" rel="noopener noreferrer">
-                    <FaInstagram style={iconStyle} />
-                </a>
-                <a href={data.github} target="_blank" rel="noopener noreferrer">
-                    <FaGithub style={iconStyle} />
-                </a>
-                <a href={data.behance} target="_blank" rel="noopener noreferrer">
-                    <FaBehance style={iconStyle} />
-                </a>
+                {data.linkedin && (
+                    <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin style={iconStyle} />
+                    </a>
+                )}
+                {data.instagram && (
+                    <a href={data.instagram} target="_blank" rel="noopener noreferrer">
+                        <FaInstagram style={iconStyle} />
+                    </a>
+                )}
+                {data.github && (
+                    <a href={data.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub style={iconStyle} />
+                    </a>
+                )}
+                {data.behance && (
+                    <a href={data.behance} target="_blank" rel="noopener noreferrer">
+                        <FaBehance style={iconStyle} />
+                    </a>
+                )}
             </div>
 
-            {/* Tekst stopki */}
             <div style={footerStyle} className="text-center">
-                {/* Desktop */}
                 <span className="block mb-1 hidden sm:block text-xs md:text-sm lg:text-sm">
                     {t("title", "Correspondence address")}
                 </span>
@@ -59,7 +77,6 @@ const Footer = ({ data, theme }) => {
                     )}
                 </span>
 
-                {/* Mobile */}
                 <span className="block mb-1 sm:hidden text-xs">
                     {t("address_short_1", "Beyond Office | Fabryka Norblina")}
                 </span>

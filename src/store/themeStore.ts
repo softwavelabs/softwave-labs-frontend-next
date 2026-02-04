@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { persist, StateStorage } from "zustand/middleware";
+import { persist } from "zustand/middleware";
 
 interface ThemeState {
     activeIndex: number;
@@ -9,8 +9,6 @@ interface ThemeState {
     setLastIndex: (index: number) => void;
     setBackground: (color: string) => void;
 }
-
-type ThemeStore = ReturnType<typeof useThemeStore>;
 
 export const useThemeStore = create<ThemeState>()(
     persist(

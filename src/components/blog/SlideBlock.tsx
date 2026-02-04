@@ -1,15 +1,11 @@
 import React from "react";
+import Image from "next/image";
+import type { FileData } from "@/components/blog/types/files";
 
 interface SliderBlockProps {
     block: {
         files?: {
-            data?: Array<{
-                attributes: {
-                    url: string;
-                    alternativeText?: string;
-                    caption?: string;
-                };
-            }>;
+            data?: FileData[];
         };
     };
     api_url: string;
@@ -22,14 +18,16 @@ const SliderBlock: React.FC<SliderBlockProps> = ({ block, api_url }) => {
 
     return (
         <div className="slider-container overflow-x-auto snap-x snap-mandatory flex gap-4 py-4">
-            {block.files.data.map((file: any, index: number) => {
+            {block.files.data.map((file: FileData, index: number) => {
                 const url = file.attributes?.url ? api_url + file.attributes.url : "";
                 if (!url) return null;
                 return (
                     <div key={index} className="flex-shrink-0 snap-center relative">
-                        <img
+                        <Image
                             src={url}
                             alt={file.attributes?.alternativeText || `Slide ${index + 1}`}
+                            width={400}
+                            height={256}
                             className="h-64 object-cover rounded-lg"
                         />
                         {file.attributes?.caption && (

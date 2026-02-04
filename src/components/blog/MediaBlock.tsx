@@ -1,12 +1,6 @@
 import React from "react";
-
-interface MediaItem {
-    id: number;
-    url: string;
-    alternativeText?: string;
-    mime?: string;
-    caption?: string;
-}
+import Image from "next/image";
+import type { MediaItem } from "@/components/blog/types/media";
 
 interface MediaBlockProps {
     block: {
@@ -30,9 +24,11 @@ const MediaBlock: React.FC<MediaBlockProps> = ({ block, api_url }) => {
                 if (item.mime?.startsWith("image/")) {
                     return (
                         <figure key={item.id}>
-                            <img
+                            <Image
                                 src={fullUrl}
                                 alt={item.alternativeText || "Media"}
+                                width={800}
+                                height={600}
                                 className="w-full h-auto rounded-lg"
                             />
                             {item.caption && (

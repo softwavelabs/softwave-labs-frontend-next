@@ -1,16 +1,28 @@
 import React, { JSX } from "react";
+import type {
+    MarkdownNode,
+    MarkdownChild,
+    ListItemNode,
+} from "./types/markdown";
 
 interface MarkdownBlockProps {
     block: {
-        body: Array<any>;
+        body: MarkdownNode[];
+    };
+}
+
+interface MarkdownBlockProps {
+    block: {
+        body: MarkdownNode[];
     };
 }
 
 const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
-    const renderChildren = (children: any[]) => {
-        return children.map((child: any, index: number) => {
+    const renderChildren = (children: MarkdownChild[]) => {
+        return children.map((child: MarkdownChild, index: number) => {
             if (child.type === "text") {
-                let text: JSX.Element | string = child.text;
+                let text: JSX.Element | string = child.text || "";
+
 
                 if (child.bold) text = <strong key={index}>{text}</strong>;
                 if (child.italic) text = <em key={index}>{text}</em>;
@@ -31,7 +43,7 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
         });
     };
 
-    const renderNode = (node: any, index: number) => {
+    const renderNode = (node: MarkdownNode, index: number) => {
         switch (node.type) {
             case "paragraph":
                 return <p key={index} className="mb-4">{renderChildren(node.children || [])}</p>;
@@ -39,15 +51,15 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
             case "heading":
                 const level = Math.min(Math.max(node.level || 2, 1), 6);
                 const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-                console.log(level)
-                console.log(Tag)
+                console.log(level);
+                console.log(Tag);
                 return <Tag key={index} className={`font-bold mb-2 mt-4 text-4xl`}>{renderChildren(node.children || [])}</Tag>;
 
             case "list":
                 const ListTag = node.format === "ordered" ? "ol" : "ul";
                 return (
                     <ListTag key={index} className={node.format === "ordered" ? "list-decimal ml-6 mb-4" : "list-disc ml-6 mb-4"}>
-                        {node.children?.map((item: any, i: number) => (
+                        {node.children?.map((item: ListItemNode, i: number) => (
                             <li key={i}>{renderChildren(item.children || [])}</li>
                         ))}
                     </ListTag>
