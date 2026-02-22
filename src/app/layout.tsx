@@ -1,8 +1,33 @@
-// import "./globals.css";
-
-// app/layout.tsx
-import { LocaleProvider} from "@/app/contexts/LocaleContext";
+import { LocaleProvider } from "@/app/contexts/LocaleContext";
 import { cookies } from "next/headers";
+
+export const metadata = {
+    title: 'Softwave Labs',
+    description: 'Softwave Labs',
+    icons: {
+        icon: '/dot.svg',
+    },
+    openGraph: {
+        title: 'Softwave Labs',
+        description: 'Softwave Labs',
+        url: 'https://softwave-labs.com',
+        siteName: 'Softwave Labs',
+        images: [
+            {
+                url: '/dot.svg',
+                width: 1200,
+                height: 630,
+            },
+        ],
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Softwave Labs',
+        description: 'Softwave Labs – nowoczesne aplikacje webowe',
+        images: ['/dot.svg'],
+    },
+};
 
 export default async function RootLayout({
                                              children,
@@ -15,10 +40,7 @@ export default async function RootLayout({
     return (
         <html lang={locale}>
         <body>
-        <LocaleProvider initialLocale={locale}>
-
-                {children}
-        </LocaleProvider>
+        <LocaleProvider initialLocale={locale}>{children}</LocaleProvider>
         </body>
         </html>
     );
