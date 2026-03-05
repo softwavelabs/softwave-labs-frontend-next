@@ -164,8 +164,32 @@ const ArticlePage: React.FC = () => {
 
                 <header className="mb-6 mt-4">
                     <h1 className="text-3xl font-bold mb-2">{article.title}</h1>
-                    {article.createdAt && <p className="text-xs text-gray-500">{formatDate(article.createdAt)}</p>}
+
+                    <h1 className="text-3xl font-bold mb-2">{article.author?.avatar?.url}</h1>
+                    <div className="flex items-center gap-3 text-sm">
+                        {article.author?.avatar?.url && (
+                            <Image
+                                src={`${process.env.NEXT_PUBLIC_API_URL}${article.author.avatar.url}`}
+                                alt={article.author.name}
+                                width={32}
+                                height={32}
+                                className="rounded-full"
+                            />
+                        )}
+
+                        <div>
+                            {article.author?.name && (
+                                <p className="font-medium">{article.author.name}</p>
+                            )}
+
+                            <div className="flex gap-2 text-xs text-gray-500">
+                                {article.author?.title && <span>{article.author.title}</span>}
+                                {article.createdAt && <span>{formatDate(article.createdAt)}</span>}
+                            </div>
+                        </div>
+                    </div>
                 </header>
+
 
                 {coverImageUrl && (
                     <figure className="mb-6">
