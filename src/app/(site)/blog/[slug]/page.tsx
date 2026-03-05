@@ -310,7 +310,7 @@ const ArticlePage: React.FC = () => {
                                     <SliderBlock
                                         key={`s-${block.id}-${index}`}
                                         block={block}
-                                        api_url={process.env.NEXT_PUBLIC_API_URL}
+                                        api_url={process.env.NEXT_PUBLIC_API_URL ?? ""}
                                     />
                                 );
 
@@ -319,7 +319,7 @@ const ArticlePage: React.FC = () => {
                                     <MediaBlock
                                         key={`m-${block.id}-${index}`}
                                         block={block}
-                                        api_url={process.env.NEXT_PUBLIC_API_URL}
+                                        api_url={process.env.NEXT_PUBLIC_API_URL ?? ""}
                                     />
                                 );
 

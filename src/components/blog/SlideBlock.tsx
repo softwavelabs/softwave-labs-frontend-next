@@ -8,7 +8,7 @@ interface SliderBlockProps {
             data?: FileData[];
         };
     };
-    api_url: string;
+    api_url?: string;
 }
 
 const SliderBlock: React.FC<SliderBlockProps> = ({ block, api_url }) => {
