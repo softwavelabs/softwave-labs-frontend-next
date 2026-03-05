@@ -6,6 +6,8 @@ import { useThemeStore } from "@/store/themeStore";
 import { getColorsByIndex } from "@/components/theme/Colors";
 import { useLocale } from "@/app/contexts/LocaleContext";
 
+const apiUrl = "/api/strapi";
+
 interface Author {
     name: string;
     title?: string;
@@ -45,7 +47,7 @@ const Articles = () => {
     useEffect(() => {
         const fetchArticles = async () => {
             try {
-                const res = await fetch(`/api/strapi/articles?locale=${locale}`);
+                const res = await fetch(`${apiUrl}/articles?locale=${locale}`);
                 if (!res.ok) throw new Error("Failed to fetch articles");
                 const data = await res.json();
                 setArticles(data || []);
