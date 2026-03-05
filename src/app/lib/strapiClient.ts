@@ -1,3 +1,5 @@
+import axios, { AxiosInstance } from "axios";
+
 class StrapiClient {
     private client: AxiosInstance | null = null;
 
