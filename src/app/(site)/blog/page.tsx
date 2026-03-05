@@ -101,7 +101,6 @@ const Articles = () => {
                         </div>
                     </div>
                 ))}
-                {filteredArticles.length === 0 && <p>No articles found.</p>}
             </div>
         </div>
     );
