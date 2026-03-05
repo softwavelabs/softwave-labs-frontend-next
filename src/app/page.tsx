@@ -75,7 +75,6 @@ export default function Home() {
         fetchPages();
     }, [locale]);
 
-    if (loading) return <div className="min-h-screen flex items-center justify-center">Loading pages...</div>;
     if (error) return <div className="min-h-screen flex items-center justify-center">{error}</div>;
     if (pages.length === 0) return <div className="min-h-screen flex items-center justify-center">No pages available.</div>;
     const colors: DeviceColors[] = pages.map((page, i) => {
