@@ -105,7 +105,6 @@ const ArticlePage: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
     const [showingFallback, setShowingFallback] = useState(false);
 
-    const apiUrl = "/api/strapi";
 
     /* ------------------------------------------------------------------ */
     /* Data fetching */
@@ -120,7 +119,7 @@ const ArticlePage: React.FC = () => {
                 setError(null);
 
                 const res = await fetch(
-                    `${apiUrl}/articles?slug=${slug}&locale=${locale}`
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?slug=${slug}&locale=${locale}`
                 );
                 if (!res.ok) throw new Error("Failed to fetch article");
 
@@ -145,7 +144,7 @@ const ArticlePage: React.FC = () => {
 
         const fetchArticles = async () => {
             try {
-                const res = await fetch(`${apiUrl}/articles?locale=${locale}`);
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/articles?locale=${locale}`);
                 if (!res.ok) throw new Error("Failed to fetch articles");
                 const data: Article[] = await res.json();
                 setArticles(data || []);
@@ -311,7 +310,7 @@ const ArticlePage: React.FC = () => {
                                     <SliderBlock
                                         key={`s-${block.id}-${index}`}
                                         block={block}
-                                        api_url={apiUrl}
+                                        api_url={process.env.NEXT_PUBLIC_API_URL}
                                     />
                                 );
 
@@ -320,7 +319,7 @@ const ArticlePage: React.FC = () => {
                                     <MediaBlock
                                         key={`m-${block.id}-${index}`}
                                         block={block}
-                                        api_url={apiUrl}
+                                        api_url={process.env.NEXT_PUBLIC_API_URL}
                                     />
                                 );
 
