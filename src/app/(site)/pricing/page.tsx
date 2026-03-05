@@ -19,7 +19,7 @@ interface Bundle {
 
 interface Service {
     id: number;
-    name: string;
+    title: string;
     description: string;
     price: string;
     scope?: ScopeItem[];
@@ -132,6 +132,7 @@ const PricingPage: React.FC = () => {
             <section className="w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
                 <div className="mx-auto max-w-5xl">
 
+                    {/* Bundles Section */}
                     <div className="mb-16 text-center">
                         <h1 className="text-3xl sm:text-4xl font-bold mb-4">{t("bundlesTitle", "")}</h1>
                         <p className="text-sm opacity-80">{t("bundlesSubtitle", "")}</p>
@@ -180,63 +181,64 @@ const PricingPage: React.FC = () => {
                         </button>
                     </div>
 
-                    {/*<div className="my-16 border-t-4" />*/}
-
-                    <div className="mt-16 mb-16 text-center">
+                    {/* Services Section */}
+                    <div className="mt-16 mb-8 text-center">
                         <h1 className="text-3xl sm:text-4xl font-bold mb-4">{t("servicesTitle", "")}</h1>
                         <p className="text-sm opacity-80">{t("servicesSubtitle", "")}</p>
                     </div>
 
-
-
-                    <table className="w-full text-left">
-                        <thead>
-                        <tr>
-                            <th className="px-6 py-4 text-sm font-semibold">Service</th>
-                            <th className="px-6 py-4 text-sm font-semibold">Scope</th>
-                            <th className="px-6 py-4 text-sm font-semibold">Price</th>
-                            <th className="px-6 py-4" />
-                        </tr>
-                        </thead>
-                        <tbody className="divide-y">
-                        {services.map((service) => (
-                            <tr key={service.id}>
-                                <td className="px-6 py-5">
-                                    <p className="font-medium">{service.name}</p>
-                                    <p className="text-sm">{service.description}</p>
-                                </td>
-                                <td className="px-6 py-5 text-sm">
-                                    <ul className="space-y-1">
-                                        {service.scope?.map((f: ScopeItem, idx: number) => (
-                                            <li key={idx}>{f.children?.[0]?.text ?? ""}</li>
-                                        ))}
-                                    </ul>
-                                </td>
-                                <td className="px-6 py-5 font-semibold whitespace-nowrap">
-                                    {t("price", "from").replace("{price}", service.price).replace("{currency}", currency)}
-                                </td>
+                    {/* Responsive Table Wrapper */}
+                    <div className="overflow-x-auto">
+                        <table className="w-full text-left min-w-[600px]">
+                            <thead>
+                            <tr>
+                                <th className="px-6 py-4 text-sm font-semibold">Service</th>
+                                <th className="px-6 py-4 text-sm font-semibold">Scope</th>
+                                <th className="px-6 py-4 text-sm font-semibold">Price</th>
+                                <th className="px-6 py-4" />
                             </tr>
-                        ))}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody className="divide-y">
+                            {services.map((service) => (
+                                <tr key={service.id}>
+                                    <td className="px-6 py-5">
+                                        <p className="font-medium">{service.title}</p>
+                                        <p className="text-sm">{service.description}</p>
+                                    </td>
+                                    <td className="px-6 py-5 text-sm">
+                                        <ul className="space-y-1">
+                                            {service.scope?.map((f: ScopeItem, idx: number) => (
+                                                <li key={idx}>{f.children?.[0]?.text ?? ""}</li>
+                                            ))}
+                                        </ul>
+                                    </td>
+                                    <td className="px-6 py-5 font-semibold whitespace-nowrap">
+                                        {t("price", "from").replace("{price}", service.price).replace("{currency}", currency)}
+                                    </td>
+                                </tr>
+                            ))}
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             </section>
 
             <style jsx>{`
-        div::-webkit-scrollbar {
-          display: none;
-        }
-        .pricing-card {
-          width: 97%;
-          min-width: 97%;
-        }
-        @media (min-width: 768px) {
-          .pricing-card {
-            width: calc((100% - 2rem) / 3);
-            min-width: calc((100% - 2rem) / 3);
-          }
-        }
-      `}</style>
+              div::-webkit-scrollbar {
+                display: none;
+              }
+              .pricing-card {
+                width: 97%;
+                min-width: 97%;
+              }
+              @media (min-width: 768px) {
+                .pricing-card {
+                  width: calc((100% - 2rem) / 3);
+                  min-width: calc((100% - 2rem) / 3);
+                }
+              }
+            `}</style>
         </div>
     );
 };

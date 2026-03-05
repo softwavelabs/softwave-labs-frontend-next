@@ -162,7 +162,7 @@ const ArticlePage: React.FC = () => {
                     </div>
                 )}
 
-                <header className="mb-6">
+                <header className="mb-6 mt-4">
                     <h1 className="text-3xl font-bold mb-2">{article.title}</h1>
                     {article.createdAt && <p className="text-xs text-gray-500">{formatDate(article.createdAt)}</p>}
                 </header>
