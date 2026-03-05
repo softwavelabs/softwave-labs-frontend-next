@@ -3,6 +3,7 @@ import axios from "axios";
 
 export async function GET(req: NextRequest) {
     const locale = req.nextUrl.searchParams.get("locale") || "en";
+    const slug = req.nextUrl.searchParams.get("slug");
     const apiUrl = process.env.API_URL;
     const apiToken = process.env.API_TOKEN;
 
@@ -11,7 +12,10 @@ export async function GET(req: NextRequest) {
     }
 
     try {
-        const res = await axios.get(`${apiUrl}/api/articles?populate=*&locale=${locale}`, {
+        let url = `${apiUrl}/api/articles?populate=*&locale=${locale}`;
+        if (slug) url += `&slug=${slug}`;
+
+        const res = await axios.get(url, {
             headers: { Authorization: `Bearer ${apiToken}` },
         });
 
@@ -25,7 +29,7 @@ export async function GET(req: NextRequest) {
         return NextResponse.json(res.data.data);
     } catch (err: unknown) {
         const errorMessage = err instanceof Error ? err.message : String(err);
-        console.error("Error fetching bundles from Strapi:", errorMessage);
+        console.error("Error fetching articles from Strapi:", errorMessage);
         return NextResponse.json({ error: errorMessage || "Strapi fetch failed" }, { status: 500 });
     }
 }

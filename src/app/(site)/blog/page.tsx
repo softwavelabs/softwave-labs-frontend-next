@@ -5,9 +5,7 @@ import { useRouter } from "next/navigation";
 import { useThemeStore } from "@/store/themeStore";
 import { getColorsByIndex } from "@/components/theme/Colors";
 import { useLocale } from "@/app/contexts/LocaleContext";
-
 const apiUrl = "/api/strapi";
-
 interface Author {
     name: string;
     title?: string;
@@ -49,7 +47,7 @@ const Articles = () => {
             try {
                 const res = await fetch(`${apiUrl}/articles?locale=${locale}`);
                 if (!res.ok) throw new Error("Failed to fetch articles");
-                const data = await res.json();
+                const data: Article[] = await res.json();
                 setArticles(data || []);
             } catch (err) {
                 console.error("Error fetching articles", err);
