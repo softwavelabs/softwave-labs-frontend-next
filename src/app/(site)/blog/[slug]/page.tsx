@@ -169,9 +169,19 @@ const ArticlePage: React.FC = () => {
 
                 {coverImageUrl && (
                     <figure className="mb-6">
-                        <Image src={coverImageUrl} alt="Cover" width={600} height={300} className="rounded-lg w-full h-auto" />
+                        <div className="relative w-full aspect-[2/1]">
+                            <Image
+                                src={coverImageUrl}
+                                alt="Cover"
+                                fill
+                                className="rounded-lg object-cover"
+                            />
+                        </div>
+
                         {article.cover?.caption && (
-                            <figcaption className="text-center text-gray-500 mt-2">{article.cover.caption}</figcaption>
+                            <figcaption className="text-center text-gray-500 mt-2">
+                                {article.cover.caption}
+                            </figcaption>
                         )}
                     </figure>
                 )}
