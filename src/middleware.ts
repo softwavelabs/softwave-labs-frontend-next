@@ -1,11 +1,10 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const locales = ['en', 'nb', 'is', 'pl'];
+const locales = ['en', 'nb', 'pl'];
 const defaultLocale = 'en';
 
 function getLocale(request: NextRequest): string {
-    // Sprawdź cookie
     const localeCookie = request.cookies.get('NEXT_LOCALE')?.value;
     if (localeCookie && locales.includes(localeCookie)) {
         return localeCookie;
@@ -26,10 +25,9 @@ export function middleware(request: NextRequest) {
     const locale = getLocale(request);
     const response = NextResponse.next();
 
-    // Użyj set() z dwoma parametrami: name i value
     response.cookies.set('NEXT_LOCALE', locale, {
         path: '/',
-        maxAge: 60 * 60 * 24 * 365, // 1 rok
+        maxAge: 60 * 60 * 24 * 365,
         sameSite: 'lax',
     });
 
