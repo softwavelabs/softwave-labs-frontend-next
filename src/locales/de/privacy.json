@@ -1,3 +1,66 @@
 {
-
+  "title": "Datenschutzerklärung",
+  "subtitle": "Regeln zur Verarbeitung Ihrer personenbezogenen Daten",
+  "sections": [
+    {
+      "title": "1. Allgemeine Informationen",
+      "content": [
+        Diese Richtlinie gilt für die Website softwave-labs.com.",
+        "Verantwortlicher für die Datenverarbeitung ist Antoni Tabaczka, Beyond Office, Fabryka Norblina, Żelazna 51/53 Gebäude C, 00-841 Warschau, Polen.",
+        "Kontakt zum Verantwortlichen: softwavelabs@protonmail.com",
+        "Der Dienst verarbeitet Daten zum Zweck der Bearbeitung von Kontaktformularen, der Erfüllung bestellter Dienstleistungen und des Direktmarketings."
+      ]
+    },
+    {
+      "title": "2. Datenschutz",
+      "content": [
+        "Die Verbindung zur Website ist durch ein SSL-Zertifikat verschlüsselt.",
+        "Benutzerpasswörter werden in gehashter Form gespeichert — eine Rückumwandlung ist nicht möglich.",
+        "Der Betreiber aktualisiert regelmäßig die zur Datenverarbeitung verwendete Software."
+      ]
+    },
+    {
+      "title": "3. Hosting und Infrastruktur",
+      "content": [
+        "Der Dienst wird bei externen Cloud-Anbietern gehostet.",
+        "Anbieter können technische Daten wie IP-Adresse, Server-Logs, URLs, Anfragezeit und Browserinformationen verarbeiten.",
+        "Wir nutzen derzeit die Dienste Vercel und Render."
+      ]
+    },
+    {
+      "title": "4. Ihre Rechte",
+      "content": [
+        "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit.",
+        "Sie können der Datenverarbeitung zu Marketingzwecken widersprechen.",
+        "Sie haben das Recht, eine Beschwerde beim Präsidenten der Datenschutzbehörde, ul. Stawki 2, 00-193 Warschau, Polen, einzureichen.",
+        "Daten werden nicht außerhalb der Europäischen Union übertragen."
+      ]
+    },
+    {
+      "title": "5. Formulare",
+      "content": [
+        "Der Dienst sammelt Daten, die der Nutzer freiwillig in Kontaktformularen angibt.",
+        "Die Daten werden ausschließlich zur Bearbeitung der Anfrage oder zur Aufnahme eines Geschäftskontakts verarbeitet.",
+        "Der Dienst kann Verbindungsparameter wie Zeit und IP-Adresse speichern."
+      ]
+    },
+    {
+      "title": "6. Marketing-Techniken",
+      "content": [
+        "Der Dienst verwendet Google Analytics zur anonymen Verkehrsanalytik.",
+        "Remarketing-Techniken werden eingesetzt, um Werbung an das Nutzerverhalten anzupassen — ohne Übertragung personenbezogener Daten.",
+        "Der Dienst verwendet den Facebook-Pixel, der Facebook über Besuche der Website informiert.",
+        "Heatmaps und Nutzerverhaltensaufzeichnungen werden verwendet — die Daten werden vor der Übermittlung anonymisiert."
+      ]
+    },
+    {
+      "title": "7. Cookies",
+      "content": [
+        "Der Dienst verwendet Cookies — Textdateien, die auf dem Gerät des Nutzers gespeichert werden.",
+        "Cookies werden zur Aufrechterhaltung von Sitzungen und zu Marketingzwecken verwendet.",
+        "Es werden zwei Arten von Cookies verwendet: Sitzungscookies (temporär) und persistente Cookies (für einen festgelegten Zeitraum gespeichert).",
+        "Nutzer können Cookies über die Browsereinstellungen verwalten: Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
 }
