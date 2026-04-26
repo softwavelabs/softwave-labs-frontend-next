@@ -25,7 +25,6 @@ interface Props {
         primary?: string;
         secondary?: string;
     };
-    locale: string;
 }
 
 interface ToggleProps {

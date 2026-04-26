@@ -38,7 +38,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <html>
         <body>
         <LocaleProvider initialLocale={locale}>
-            <ClientLayout locale={locale}>
+            <ClientLayout>
                 {children}
             </ClientLayout>
         </LocaleProvider>
