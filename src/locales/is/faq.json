@@ -1,0 +1,50 @@
+{
+  "title": "FAQ",
+  "subtitle": "Algengar spurningar",
+  "items": [
+    {
+      "q": "Hversu langan tíma tekur það að búa til vefsíðu?",
+      "a": "Milli 7 og 21 vinnudaga, allt eftir flækjustigi verkefnisins."
+    },
+    {
+      "q": "Býður þú upp á hýsingu?",
+      "a": "Já, ég hjálpa við stillingu hýsingar og léns."
+    },
+    {
+      "q": "Hvað kostar vefsíða?",
+      "a": "Verð byrjar frá 80.000 kr. fyrir einfalda kynningarvefsíðu. Hafðu samband fyrir ókeypis tilboð."
+    },
+    {
+      "q": "Undirritar þú samning?",
+      "a": "Já, hvert verkefni er gert samkvæmt samningi sem verndar báðar aðilar."
+    },
+    {
+      "q": "Hvernig virkar greiðslan?",
+      "a": "50% fyrirframgreiðsla áður en vinna hefst, 50% við afhendingu. Greiðsla í hlutum er möguleg fyrir stærri verkefni."
+    },
+    {
+      "q": "Get ég breytt vefsíðunni sjálfur?",
+      "a": "Já! Ég smíða á CMS kerfum eins og WordPress svo þú getir auðveldlega uppfært efni án tæknilegrar þekkingar."
+    },
+    {
+      "q": "Verður vefsíðan fínstillt fyrir Google (SEO)?",
+      "a": "Já — allar vefsíður innihalda grunnatriði SEO: titlar, meta lýsingar, fyrirsagnarbygging og hraður hleðslutími."
+    },
+    {
+      "q": "Virkar vefsíðan á farsíma?",
+      "a": "Auðvitað. Allar vefsíður eru smíðaðar með svaræni hönnun fyrir síma, spjaldtölvur og tölvur."
+    },
+    {
+      "q": "Hvað þarf ég að undirbúa áður en við byrjum?",
+      "a": "Helst: merki, textar fyrir undirforsíður, myndir og dæmi um vefsíður sem þér líkar."
+    },
+    {
+      "q": "Býður þú upp á stuðning eftir kynninguna?",
+      "a": "Já — leiðréttingar eru ókeypis í 30 daga. Greiddar viðhaldslotur eru einnig í boði."
+    },
+    {
+      "q": "Hvað ef ég er ekki ánægður með niðurstöðuna?",
+      "a": "Við förum í gegnum samþykktarstig fyrir kynningu þar sem þú getur beðið um leiðréttingar. Ég vinn þar til þú ert ánægður."
+    }
+  ]
+}

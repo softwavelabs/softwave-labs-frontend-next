@@ -1,0 +1,65 @@
+{
+  "title": "Privacy Policy",
+  "subtitle": "How we process your personal data",
+  "sections": [
+    {
+      "title": "1. General information",
+      "content": [
+        "This policy applies to the website softwave-labs.com",
+        "The data administrator is Antoni Tabaczka, Masztowa 10, 61-345 Poznań, Poland.",
+        "Contact: kontakt@kacperglodowski.pl",
+        "Data is processed for: handling contact forms, delivering ordered services, and direct marketing."
+      ]
+    },
+    {
+      "title": "2. Data protection",
+      "content": [
+        "All connections are encrypted using an SSL certificate.",
+        "User passwords are stored in hashed form and cannot be reversed.",
+        "The operator regularly updates all software used to process personal data."
+      ]
+    },
+    {
+      "title": "3. Hosting",
+      "content": [
+        "The website is hosted on lh.pl servers.",
+        "The hosting provider maintains server logs including IP addresses, URLs, request timestamps, and browser information."
+      ]
+    },
+    {
+      "title": "4. Your rights",
+      "content": [
+        "You have the right to access, correct, delete, restrict processing of, and transfer your data.",
+        "You may object to processing of your data for marketing purposes.",
+        "You have the right to lodge a complaint with the Polish Data Protection Authority (UODO), ul. Stawki 2, 00-193 Warsaw.",
+        "Your data is not transferred outside the European Union."
+      ]
+    },
+    {
+      "title": "5. Forms",
+      "content": [
+        "The website collects data voluntarily provided by users through contact forms.",
+        "Data is processed solely for handling enquiries or commercial contact.",
+        "The website may log connection parameters such as timestamp and IP address."
+      ]
+    },
+    {
+      "title": "6. Marketing techniques",
+      "content": [
+        "The website uses Google Analytics for anonymous traffic analysis.",
+        "Remarketing techniques are used to tailor ads to user behaviour — no personal data is shared.",
+        "The Facebook Pixel is used, which informs Facebook that a registered user has visited the site.",
+        "Heatmaps and session recordings are used — all data is anonymised before transmission."
+      ]
+    },
+    {
+      "title": "7. Cookies",
+      "content": [
+        "The website uses cookies — small text files stored on the user's device.",
+        "Cookies are used to maintain user sessions and support marketing activities.",
+        "Two types of cookies are used: session cookies (temporary) and persistent cookies (stored for a set period).",
+        "You can manage cookies through your browser settings: Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
+}

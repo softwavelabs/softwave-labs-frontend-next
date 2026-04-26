@@ -1,0 +1,50 @@
+{
+  "title": "FAQ",
+  "subtitle": "Często zadawane pytania",
+  "items": [
+    {
+      "q": "Jak długo trwa stworzenie strony?",
+      "a": "Od 7 do 21 dni roboczych, w zależności od złożoności projektu."
+    },
+    {
+      "q": "Czy oferujesz hosting?",
+      "a": "Tak, pomagam w konfiguracji hostingu i domeny."
+    },
+    {
+      "q": "Ile kosztuje strona internetowa?",
+      "a": "Na naszej stronie znajduje się cennik. Prezentowane ceny mają charakter orientacyjny. Ostateczna wycena zależy od zakresu i specyfiki projektu. Skontaktuj się, aby otrzymać bezpłatną, spersonalizowaną ofertę."
+    },
+    {
+      "q": "Czy podpisujesz umowę?",
+      "a": "Tak, każdy projekt objęty jest umową, która chroni obie strony."
+    },
+    {
+      "q": "Jak wygląda płatność?",
+      "a": "50% zaliczki przed rozpoczęciem prac, 50% po odbiorze. Możliwa płatność ratalna przy większych projektach."
+    },
+    {
+      "q": "Czy będę mógł samodzielnie edytować stronę?",
+      "a": "Tak, jeżeli kupiłeś integrację CMS. Buduję strony na CMS, dzięki czemu możesz łatwo aktualizować treści bez wiedzy technicznej."
+    },
+    {
+      "q": "Czy strona będzie zoptymalizowana pod Google (SEO)?",
+      "a": "Tak — każda strona zawiera podstawy SEO: tytuły, meta opisy, strukturę nagłówków i szybkie ładowanie."
+    },
+    {
+      "q": "Czy strona będzie działać na urządzeniach mobilnych?",
+      "a": "Oczywiście. Wszystkie strony tworzę w technologii Responsive Web Design dla telefonów, tabletów i komputerów."
+    },
+    {
+      "q": "Co muszę przygotować przed rozpoczęciem projektu?",
+      "a": "Najlepiej: logo, teksty na podstrony, zdjęcia oraz przykłady stron, które Ci się podobają."
+    },
+    {
+      "q": "Czy oferujesz wsparcie po wdrożeniu?",
+      "a": "Tak, jeżeli kupiłeś płatny pakiet utrzymania strony."
+    },
+    {
+      "q": "Co jeśli nie będę zadowolony z efektu?",
+      "a": "Przed wdrożeniem przechodzimy przez etap akceptacji z możliwością zgłaszania poprawek. Pracuję do momentu, aż będziesz zadowolony."
+    }
+  ]
+}

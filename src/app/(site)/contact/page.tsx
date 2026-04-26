@@ -98,11 +98,12 @@ const ContactPage: React.FC = () => {
                                     focus:outline-none
                                     focus:ring-0
                                 "
+                                style={{ fontFamily: "NeueMontreal Regular" }}
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-xs uppercase font-bold">
+                            <label className="block mb-2 text-xs uppercase font-bold" >
                                 <p>{loading ? "" : subject.label}</p>
                             </label>
                             <input
@@ -112,6 +113,7 @@ const ContactPage: React.FC = () => {
                                 defaultValue={subjectFromQuery || ""}
                                 required
                                 className="w-full border-4 px-3 py-2 text-sm bg-transparent focus:outline-none focus:ring-0"
+                                style={{ fontFamily: "NeueMontreal Regular" }}
                             />
                         </div>
 
@@ -134,6 +136,7 @@ const ContactPage: React.FC = () => {
                                     focus:outline-none
                                     focus:ring-0
                                 "
+                                style={{ fontFamily: "NeueMontreal Regular" }}
                             />
                         </div>
 
@@ -147,6 +150,7 @@ const ContactPage: React.FC = () => {
                                     text-sm
                                     transition
                                 "
+                                style={{ fontFamily: "NeueMontreal Regular" }}
                             >
                                 {t("sendButton", "Send Message")}
                             </button>

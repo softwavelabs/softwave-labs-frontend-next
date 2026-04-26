@@ -7,6 +7,7 @@ import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { useLocale } from "@/app/contexts/LocaleContext";
 import { useDictionary } from "@/app/hooks/useDictionary";
 import type { DeviceColors } from "@/app/types/colors";
+import { Link } from "theme-ui";
 
 interface FooterData {
     linkedin?: string;
@@ -86,6 +87,17 @@ const Footer: React.FC<FooterProps> = ({ data, theme }) => {
                         "ul. Żelazna 51/53 budynek C, 00-841 Warsaw, Poland"
                     )}
                 </span>
+                <div className="flex justify-center items-center gap-x-2 text-xs">
+                    <Link href="/privacy">
+                        {t("privacy", "")}
+                    </Link>
+
+                    <span className="">|</span>
+
+                    <Link href="/faq">
+                        {t("faq", "")}
+                    </Link>
+                </div>
             </div>
         </footer>
     );

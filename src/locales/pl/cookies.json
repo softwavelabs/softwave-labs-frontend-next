@@ -1,0 +1,14 @@
+{
+  "title": "Ustawienia cookies",
+  "description": "Używamy cookies do działania strony oraz analityki i marketingu.",
+  "acceptAll": "Akceptuj wszystkie",
+  "rejectAll": "Odrzuć",
+  "settings": "Ustawienia",
+  "settingsTitle": "Ustawienia cookies",
+  "necessary": "Niezbędne",
+  "necessaryDesc": "Zawsze aktywne",
+  "analytics": "Analityczne",
+  "marketing": "Marketingowe",
+  "save": "Zapisz wybór",
+  "back": "Wróć"
+}

@@ -37,7 +37,7 @@ const AboutPage: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="space-y-10 text-sm">
+                    <div className="space-y-10 text-sm text-justify " style={{ fontFamily: "NeueMontreal Regular" }}>
                         <p>{loading ? "" : paragraphs[0]}</p>
                         <p>{loading ? "" : paragraphs[1]}</p>
                         <p>{loading ? "" : paragraphs[2]}</p>
@@ -52,8 +52,8 @@ const AboutPage: React.FC = () => {
                             : values.map(
                                 (v: ValueItem, index: number) => (
                                     <div key={index}>
-                                        <h3 className="font-bold mb-2">{v.title}</h3>
-                                        <p className="opacity-80">{v.description}</p>
+                                        <h3 className="font-bold mb-2" style={{ fontFamily: "NeueMontreal Regular" }}>{v.title}</h3>
+                                        <p className="opacity-80" style={{ fontFamily: "NeueMontreal Regular" }} >{v.description}</p>
                                     </div>
                                 )
                             )}

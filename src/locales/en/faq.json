@@ -1,0 +1,50 @@
+{
+  "title": "FAQ",
+  "subtitle": "Frequently asked questions",
+  "items": [
+    {
+      "q": "How long does it take to build a website?",
+      "a": "Between 7 and 21 working days, depending on the complexity of the project."
+    },
+    {
+      "q": "Do you offer hosting?",
+      "a": "Yes, I help with hosting and domain configuration."
+    },
+    {
+      "q": "How much does a website cost?",
+      "a": "Prices start from £500 for a simple brochure site. Contact me for a free quote."
+    },
+    {
+      "q": "Do you sign a contract?",
+      "a": "Yes, every project is covered by a contract that protects both parties."
+    },
+    {
+      "q": "How does payment work?",
+      "a": "50% deposit before work begins, 50% upon delivery. Instalments available for larger projects."
+    },
+    {
+      "q": "Can I edit the website myself?",
+      "a": "Yes! I build on CMS platforms like WordPress so you can easily update content without technical knowledge."
+    },
+    {
+      "q": "Will the site be SEO optimised?",
+      "a": "Yes — every site includes on-page SEO basics: titles, meta descriptions, heading structure, and fast loading."
+    },
+    {
+      "q": "Will the site work on mobile?",
+      "a": "Absolutely. All sites are built with Responsive Web Design for phones, tablets, and desktops."
+    },
+    {
+      "q": "What do I need to prepare before we start?",
+      "a": "Ideally: a logo, page texts, photos, and examples of sites you like."
+    },
+    {
+      "q": "Do you offer support after launch?",
+      "a": "Yes — revisions are free for 30 days. Paid maintenance packages are also available."
+    },
+    {
+      "q": "What if I'm not happy with the result?",
+      "a": "We go through an approval stage before launch where you can request revisions. I work until you're satisfied."
+    }
+  ]
+}

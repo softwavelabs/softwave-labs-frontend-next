@@ -22,7 +22,29 @@
   url("NeueMontreal-Light.otf") format("woff");
 }
 
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: local("SF Pro Display Regular"),
+  url("SF-Pro-Display-Regular.otf") format("opentype");
+}
 
+@font-face {
+  font-family: "SF Pro Display Medium";
+  src: local("SF Pro Display Medium"),
+  url("SF-Pro-Display-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold";
+  src: local("SF Pro Display Semibold"),
+  url("SF-Pro-Display-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: local("SF Pro Display Bold"),
+  url("SF-Pro-Display-Bold.otf") format("opentype");
+}
 
 
 

@@ -7,6 +7,8 @@ import conceptData from "@/data/conceptData.json";
 
 import { useThemeStore } from "@/store/themeStore";
 import { getColorsByIndex } from "@/components/theme/Colors";
+import CookieBanner from "@/components/theme/CookieBanner";
+import React from "react";
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
     const activeIndex = useThemeStore((state) => state.activeIndex ?? 0);
@@ -36,6 +38,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                     }}
                 />
             </Layout>
+
         </div>
     );
 }

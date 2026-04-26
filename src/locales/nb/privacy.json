@@ -1,0 +1,66 @@
+{
+  "title": "Personvernerklæring",
+  "subtitle": "Regler for behandling av dine personopplysninger",
+  "sections": [
+    {
+      "title": "1. Generell informasjon",
+      "content": [
+        "Denne erklæringen gjelder for nettstedet softwave-labs.com.",
+        "Behandlingsansvarlig er Antoni Tabaczka, Beyond Office, Fabryka Norblina, Żelazna 51/53 bygg C, 00-841 Warszawa, Polen.",
+        "Kontakt med behandlingsansvarlig: softwavelabs@protonmail.com",
+        "Tjenesten behandler data for å håndtere kontaktskjemaer, levere bestilte tjenester og utføre direkte markedsføring."
+      ]
+    },
+    {
+      "title": "2. Databeskyttelse",
+      "content": [
+        "Forbindelsen til nettstedet er kryptert med et SSL-sertifikat.",
+        "Brukerpassord lagres i hashet form — det er ikke mulig å reversere dem.",
+        "Operatøren oppdaterer regelmessig programvaren som brukes til databehandling."
+      ]
+    },
+    {
+      "title": "3. Hosting og infrastruktur",
+      "content": [
+        "Tjenesten er hostet hos eksterne skyleverandører.",
+        "Leverandører kan behandle tekniske data som IP-adresse, serverlogger, URL-er, forespørselstid og nettleserinformasjon.",
+        "Vi bruker for tiden Vercel og Render."
+      ]
+    },
+    {
+      "title": "4. Dine rettigheter",
+      "content": [
+        "Du har rett til innsyn i dine data, retting, sletting, begrensning av behandling og dataportabilitet.",
+        "Du kan protestere mot behandling av data til markedsføringsformål.",
+        "Du har rett til å klage til Datatilsynet (Polen), ul. Stawki 2, 00-193 Warszawa.",
+        "Data overføres ikke utenfor EU."
+      ]
+    },
+    {
+      "title": "5. Skjemaer",
+      "content": [
+        "Tjenesten samler inn data som brukeren frivillig oppgir i kontaktskjemaer.",
+        "Data behandles kun for å håndtere forespørsler eller etablere forretningskontakt.",
+        "Tjenesten kan lagre tilkoblingsparametere som tid og IP-adresse."
+      ]
+    },
+    {
+      "title": "6. Markedsføringsteknikker",
+      "content": [
+        "Tjenesten bruker Google Analytics for anonym trafikkanalyse.",
+        "Remarketing brukes for å tilpasse annonser til brukerens atferd — uten å overføre personopplysninger.",
+        "Tjenesten bruker Facebook-piksel som informerer Facebook om besøk på nettstedet.",
+        "Heatmaps og opptak av brukeradferd brukes — data anonymiseres før overføring."
+      ]
+    },
+    {
+      "title": "7. Informasjonskapsler",
+      "content": [
+        "Tjenesten bruker informasjonskapsler (cookies) — tekstfiler lagret på brukerens enhet.",
+        "Cookies brukes for å opprettholde brukerøkter og for markedsføringsformål.",
+        "To typer cookies brukes: sesjonscookies (midlertidige) og vedvarende cookies (lagres i en bestemt periode).",
+        "Brukere kan administrere cookies gjennom nettleserinnstillinger: Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
+}

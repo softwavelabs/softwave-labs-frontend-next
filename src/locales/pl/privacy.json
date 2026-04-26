@@ -1,0 +1,66 @@
+{
+  "title": "Polityka Prywatności",
+  "subtitle": "Zasady przetwarzania Twoich danych osobowych",
+  "sections": [
+    {
+      "title": "1. Informacje ogólne",
+      "content": [
+        "Niniejsza polityka dotyczy serwisu softwave-labs.com",
+        "Administratorem danych osobowych jest Antoni Tabaczka, Beyond Office, Fabryka Norblina, ul. Żelazna 51/53 budynek C, 00-841 Warsaw, Poland.",
+        "Kontakt z Administratorem: softwavelabs@protonmail.com",
+        "Serwis przetwarza dane w celach: obsługi formularzy kontaktowych, realizacji zamówionych usług oraz prowadzenia marketingu bezpośredniego."
+      ]
+    },
+    {
+      "title": "2. Ochrona danych",
+      "content": [
+        "Połączenie z serwisem jest szyfrowane certyfikatem SSL.",
+        "Hasła użytkowników są przechowywane w postaci hashowanej — nie jest możliwe ich odwrócenie.",
+        "Operator regularnie aktualizuje oprogramowanie wykorzystywane do przetwarzania danych."
+      ]
+    },
+    {
+      "title": "3. Hosting i infrastruktura",
+      "content": [
+        "Serwis jest hostowany u zewnętrznych dostawców usług chmurowych.",
+        "Dostawcy mogą przetwarzać dane techniczne, takie jak adres IP, logi serwera, adresy URL, czas zapytań oraz informacje o przeglądarce użytkownika.",
+        "Obecnie korzystamy z usług Vercel oraz Render."
+      ]
+    },
+    {
+      "title": "4. Twoje prawa",
+      "content": [
+        "Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz przenoszenia.",
+        "Możesz złożyć sprzeciw wobec przetwarzania danych w celach marketingowych.",
+        "Przysługuje Ci prawo do złożenia skargi do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.",
+        "Dane nie są przekazywane poza teren Unii Europejskiej."
+      ]
+    },
+    {
+      "title": "5. Formularze",
+      "content": [
+        "Serwis zbiera dane podane dobrowolnie przez użytkownika w formularzach kontaktowych.",
+        "Dane są przetwarzane wyłącznie w celu obsługi zgłoszenia lub nawiązania kontaktu handlowego.",
+        "Serwis może zapisywać parametry połączenia, takie jak czas i adres IP."
+      ]
+    },
+    {
+      "title": "6. Techniki marketingowe",
+      "content": [
+        "Serwis korzysta z Google Analytics do anonimowej analizy ruchu na stronie.",
+        "Stosowane są techniki remarketingowe dopasowujące reklamy do zachowania użytkownika — bez przekazywania danych osobowych.",
+        "Serwis korzysta z piksela Facebooka, który informuje serwis Facebook o odwiedzinach strony.",
+        "Stosowane są mapy ciepła i nagrania zachowania użytkowników — dane są anonimizowane przed przesłaniem."
+      ]
+    },
+    {
+      "title": "7. Pliki cookies",
+      "content": [
+        "Serwis korzysta z plików cookies (ciasteczek) — plików tekstowych przechowywanych na urządzeniu użytkownika.",
+        "Cookies służą do utrzymania sesji użytkownika oraz realizacji celów marketingowych.",
+        "Stosowane są dwa rodzaje cookies: sesyjne (tymczasowe) oraz stałe (przechowywane przez określony czas).",
+        "Użytkownik może zarządzać plikami cookies poprzez ustawienia przeglądarki: Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
+}

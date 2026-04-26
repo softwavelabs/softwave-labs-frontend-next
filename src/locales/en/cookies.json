@@ -1,0 +1,14 @@
+{
+  "title": "Cookie settings",
+  "description": "We use cookies for website functionality as well as analytics and marketing.",
+  "acceptAll": "Accept all",
+  "rejectAll": "Reject",
+  "settings": "Settings",
+  "settingsTitle": "Cookie settings",
+  "necessary": "Necessary",
+  "necessaryDesc": "Always active",
+  "analytics": "Analytics",
+  "marketing": "Marketing",
+  "save": "Save selection",
+  "back": "Back"
+}

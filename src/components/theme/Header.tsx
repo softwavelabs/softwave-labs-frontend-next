@@ -109,6 +109,7 @@ export default function Header({ theme }: HeaderProps) {
                         {getLabel('blog', 'blog')}
                     </Link>
 
+
                     <div
                         className="relative text-sm"
                         style={{ fontFamily: "DotGothic16 Regular" }}

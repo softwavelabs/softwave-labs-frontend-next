@@ -1,5 +1,6 @@
 import { LocaleProvider } from "@/app/contexts/LocaleContext";
 import { cookies } from "next/headers";
+import ClientLayout from "@/app/clientLayout";
 
 export const metadata = {
     title: 'Softwave Labs',
@@ -29,18 +30,18 @@ export const metadata = {
     },
 };
 
-export default async function RootLayout({
-                                             children,
-                                         }: {
-    children: React.ReactNode;
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
     const cookieStore = await cookies();
     const locale = cookieStore.get('NEXT_LOCALE')?.value || 'en';
 
     return (
-        <html lang={locale}>
+        <html>
         <body>
-        <LocaleProvider initialLocale={locale}>{children}</LocaleProvider>
+        <LocaleProvider initialLocale={locale}>
+            <ClientLayout locale={locale}>
+                {children}
+            </ClientLayout>
+        </LocaleProvider>
         </body>
         </html>
     );

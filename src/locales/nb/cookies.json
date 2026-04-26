@@ -1,0 +1,14 @@
+{
+  "title": "Cookie-innstillinger",
+  "description": "Vi bruker informasjonskapsler for nettstedets funksjonalitet samt analyse og markedsføring.",
+  "acceptAll": "Godta alle",
+  "rejectAll": "Avvis",
+  "settings": "Innstillinger",
+  "settingsTitle": "Cookie-innstillinger",
+  "necessary": "Nødvendige",
+  "necessaryDesc": "Alltid aktiv",
+  "analytics": "Analyse",
+  "marketing": "Markedsføring",
+  "save": "Lagre valg",
+  "back": "Tilbake"
+}

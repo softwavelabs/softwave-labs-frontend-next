@@ -1,0 +1,66 @@
+{
+  "title": "Privacy Policy",
+  "subtitle": "Rules for processing your personal data",
+  "sections": [
+    {
+      "title": "1. General Information",
+      "content": [
+        "This policy applies to the website softwave-labs.com.",
+        "The data controller is Antoni Tabaczka, Beyond Office, Fabryka Norblina, Żelazna 51/53 building C, 00-841 Warsaw, Poland.",
+        "Contact with the data controller: softwavelabs@protonmail.com",
+        "The service processes data for the purposes of handling contact forms, fulfilling ordered services, and conducting direct marketing."
+      ]
+    },
+    {
+      "title": "2. Data Protection",
+      "content": [
+        "The connection to the website is encrypted using an SSL certificate.",
+        "User passwords are stored in hashed form — it is not possible to reverse them.",
+        "The operator regularly updates the software used to process data."
+      ]
+    },
+    {
+      "title": "3. Hosting and Infrastructure",
+      "content": [
+        "The service is hosted by external cloud service providers.",
+        "Providers may process technical data such as IP address, server logs, URLs, request time, and browser information.",
+        "We currently use Vercel and Render services."
+      ]
+    },
+    {
+      "title": "4. Your Rights",
+      "content": [
+        "You have the right to access your data, rectify it, delete it, restrict processing, and transfer it.",
+        "You may object to data processing for marketing purposes.",
+        "You have the right to lodge a complaint with the President of the Personal Data Protection Office, ul. Stawki 2, 00-193 Warsaw, Poland.",
+        "Data is not transferred outside the European Union."
+      ]
+    },
+    {
+      "title": "5. Forms",
+      "content": [
+        "The service collects data voluntarily provided by the user in contact forms.",
+        "The data is processed solely for handling the request or establishing business contact.",
+        "The service may store connection parameters such as time and IP address."
+      ]
+    },
+    {
+      "title": "6. Marketing Techniques",
+      "content": [
+        "The service uses Google Analytics for anonymous traffic analysis.",
+        "Remarketing techniques are used to tailor ads to user behavior — without transferring personal data.",
+        "The service uses the Facebook pixel, which informs Facebook about visits to the website.",
+        "Heatmaps and user behavior recordings are used — data is anonymized before being transmitted."
+      ]
+    },
+    {
+      "title": "7. Cookies",
+      "content": [
+        "The service uses cookies — text files stored on the user's device.",
+        "Cookies are used to maintain user sessions and for marketing purposes.",
+        "Two types of cookies are used: session cookies (temporary) and persistent cookies (stored for a specified time).",
+        "Users can manage cookies through browser settings: Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
+}

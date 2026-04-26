@@ -36,7 +36,7 @@ const BundleButton = ({ bundle, t }: { bundle: Bundle; t: TranslationFunction })
 
     const handleClick = () => {
         const subject = encodeURIComponent(
-            t("getBundle", "Get bundles").replace("{bundles}", bundle.title)
+            t("getBundle", "Get bundles").replace("{bundle}", bundle.title)
         );
         router.push(`/contact?subject=${subject}`);
     };
@@ -46,7 +46,7 @@ const BundleButton = ({ bundle, t }: { bundle: Bundle; t: TranslationFunction })
             onClick={handleClick}
             className="mt-auto border-4 px-6 py-3 text-sm"
         >
-            {t("getBundle", "Get bundles").replace("{bundles}", bundle.title)}
+            {t("getBundle", "Get bundles").replace("{bundle}", bundle.title)}
         </button>
     );
 };
@@ -159,7 +159,7 @@ const PricingPage: React.FC = () => {
                                         {t("price", "from").replace("{price}", bundle.price).replace("{currency}", currency)}
                                     </div>
                                     {bundle.scope && bundle.scope.length > 0 && (
-                                        <ul className="text-sm mb-8 space-y-2">
+                                        <ul className="text-sm mb-8 space-y-2" style={{ fontFamily: "NeueMontreal Regular" }} >
                                             {bundle.scope.map((item: ScopeItem, idx: number) => (
                                                 <li key={idx} className="flex gap-2">
                                                     <span></span>
@@ -203,10 +203,10 @@ const PricingPage: React.FC = () => {
                                 <tr key={service.id}>
                                     <td className="px-6 py-5">
                                         <p className="font-medium">{service.title}</p>
-                                        <p className="text-sm">{service.description}</p>
+                                        <p className="text-sm" >{service.description}</p>
                                     </td>
                                     <td className="px-6 py-5 text-sm">
-                                        <ul className="space-y-1">
+                                        <ul className="space-y-1" style={{ fontFamily: "NeueMontreal Regular" }}>
                                             {service.scope?.map((f: ScopeItem, idx: number) => (
                                                 <li key={idx}>{f.children?.[0]?.text ?? ""}</li>
                                             ))}

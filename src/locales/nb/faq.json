@@ -1,0 +1,50 @@
+{
+  "title": "FAQ",
+  "subtitle": "Ofte stilte spørsmål",
+  "items": [
+    {
+      "q": "Hvor lang tid tar det å lage en nettside?",
+      "a": "Mellom 7 og 21 arbeidsdager, avhengig av prosjektets kompleksitet."
+    },
+    {
+      "q": "Tilbyr du hosting?",
+      "a": "Ja, jeg hjelper med konfigurering av hosting og domene."
+    },
+    {
+      "q": "Hva koster en nettside?",
+      "a": "Prisene starter fra 6 000 kr for en enkel brosjyrenettside. Ta kontakt for et gratis estimat."
+    },
+    {
+      "q": "Signerer du kontrakt?",
+      "a": "Ja, hvert prosjekt dekkes av en kontrakt som beskytter begge parter."
+    },
+    {
+      "q": "Hvordan fungerer betalingen?",
+      "a": "50 % forskudd før oppstart, 50 % ved levering. Avdragsordning er mulig for større prosjekter."
+    },
+    {
+      "q": "Kan jeg redigere nettsiden selv?",
+      "a": "Ja! Jeg bygger på CMS-plattformer som WordPress, slik at du enkelt kan oppdatere innhold uten teknisk kunnskap."
+    },
+    {
+      "q": "Vil nettsiden bli optimalisert for Google (SEO)?",
+      "a": "Ja — alle nettsider inkluderer grunnleggende SEO: titler, metabeskrivelser, overskriftsstruktur og rask lasting."
+    },
+    {
+      "q": "Vil nettsiden fungere på mobil?",
+      "a": "Absolutt. Alle nettsider er bygget med responsivt design for telefoner, nettbrett og datamaskiner."
+    },
+    {
+      "q": "Hva må jeg forberede før vi starter?",
+      "a": "Gjerne: logo, tekster til undersider, bilder og eksempler på nettsider du liker."
+    },
+    {
+      "q": "Tilbyr du støtte etter lansering?",
+      "a": "Ja — revisjoner er gratis i 30 dager. Betalte vedlikeholdspakker er også tilgjengelige."
+    },
+    {
+      "q": "Hva om jeg ikke er fornøyd med resultatet?",
+      "a": "Vi går gjennom et godkjenningsstadium før lansering der du kan be om justeringer. Jeg jobber til du er fornøyd."
+    }
+  ]
+}
