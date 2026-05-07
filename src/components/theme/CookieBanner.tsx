@@ -110,9 +110,18 @@ const CookieBanner: React.FC<Props> = ({ theme }) => {
     if (!visible) return null;
 
     return (
-        <div className="fixed bottom-0 left-0 w-full z-50">
+        <div className="fixed bottom-2 left-0 w-full z-50 px-2 sm:px-4">
             <div
-                className="max-w-5xl mx-auto m-4 p-6 border-4 shadow-lg animate-slideUp"
+                className="
+                max-w-5xl mx-auto
+                p-4
+                border-2 sm:border-4
+                shadow-lg
+                animate-slideUp
+                max-h-[75vh]
+                overflow-y-auto
+                text-xs sm:text-sm
+            "
                 style={{
                     backgroundColor: theme.background,
                     color: theme.text || "#000",
@@ -120,7 +129,7 @@ const CookieBanner: React.FC<Props> = ({ theme }) => {
             >
                 {!settingsOpen ? (
                     <>
-                        <p className="text-sm mb-4">
+                        <p className="text-sm mb-2">
                             {t("description", "")}
                         </p>
 

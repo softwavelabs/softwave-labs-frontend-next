@@ -72,7 +72,7 @@ export default function Header({ theme }: HeaderProps) {
                 </div>
 
                 <nav
-                    className="absolute inset-x-0 z-10 flex justify-center gap-2 md:gap-12 lg:gap-12 mt-14 md:mt-0 lg:mt-0"
+                    className="absolute inset-x-0 z-10 flex justify-center gap-2 md:gap-12 lg:gap-12 mt-18 md:mt-0 lg:mt-0"
                     style={{
                         color: textColor,
                         fontFamily: "DotGothic16 Regular",
