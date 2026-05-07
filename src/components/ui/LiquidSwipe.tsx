@@ -18,6 +18,8 @@ const Container = styled.div`
   position: absolute;
   box-shadow: 0 0 25px -8px rgba(53, 53, 53, 0.82);
   overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
 
   @media only screen and (max-width: 500px) {
     width: 100%;
@@ -56,6 +58,7 @@ const PageDiv = styled.div.withConfig({
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  touch-action: none;
 `;
 
 const StyledSVG = styled.svg`
@@ -65,6 +68,7 @@ const StyledSVG = styled.svg`
   background-color: transparent;
   width: 20%;
   height: 100%;
+  pointer-events: none;
 `;
 
 const getPath = (y: number, x: number, width: number, height: number): string => {
@@ -204,18 +208,11 @@ const Page: React.FC<PageProps> = ({
             }
         },
         {
-            filterTaps: false,
+            filterTaps: true,
             pointer: { touch: true },
+            eventOptions: { passive: false },
         }
     );
-
-    const handleStart = () => {
-        if (isGone) return;
-    };
-
-    const handleEnd = () => {
-        if (isGone) return;
-    };
 
     return (
         <div id={`pageContainer${index}`}>
@@ -232,10 +229,6 @@ const Page: React.FC<PageProps> = ({
                 theme={theme}
                 {...bind()}
                 isGone={isGone}
-                onMouseDown={handleStart}
-                onTouchStart={handleStart}
-                onMouseUp={handleEnd}
-                onTouchEnd={handleEnd}
                 style={{
                     clipPath: `url(#clipping${index})`,
                     WebkitClipPath: `url(#clipping${index})`,
