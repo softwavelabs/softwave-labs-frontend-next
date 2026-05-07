@@ -75,6 +75,7 @@ export default function Home() {
         fetchPages();
     }, [locale]);
 
+    if (loading) return <div className="min-h-screen flex items-center justify-center"></div>;
     if (error) return <div className="min-h-screen flex items-center justify-center">{error}</div>;
     if (pages.length === 0) return <div className="min-h-screen flex items-center justify-center"></div>;
     const colors: DeviceColors[] = pages.map((page, i) => {
@@ -89,5 +90,5 @@ export default function Home() {
 
     const componentsToRender = pages.map((page, i) => <LiquidSwipeLayout key={`${page.id}-${locale}`} data={page} color={colors[i]} />);
 
-    return <LiquidSwipe components={componentsToRender} colors={colors.map(c => c.background)} />;
+    return <LiquidSwipe key={locale}  components={componentsToRender} colors={colors.map(c => c.background)} />;
 }
