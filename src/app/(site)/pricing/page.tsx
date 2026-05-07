@@ -124,7 +124,6 @@ const PricingPage: React.FC = () => {
         container.scrollBy({ left: direction === "left" ? -scrollAmount : scrollAmount, behavior: "smooth" });
     };
 
-    if (loading) return <p className="text-center py-20">Loading...</p>;
     if (error) return <p className="text-center py-20">{error}</p>;
 
     return (
