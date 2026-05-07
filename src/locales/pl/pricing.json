@@ -5,6 +5,6 @@
   "servicesSubtitle": "Pojedyncze usługi dopasowane do Twoich potrzeb.",
   "contactTitle": "Need something custom? Reach out via the contact form.",
   "contactUsButton": "Contact Us",
-  "price": "od {price}{currency} + 23% VAT",
+  "price": "od {price}{currency}",
   "getBundle": "Zdobądź pakiet {bundle}"
 }

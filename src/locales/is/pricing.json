@@ -5,6 +5,6 @@
   "servicesSubtitle": "Einstakar þjónustur sniðnar að þínum þörfum.",
   "contactTitle": "Need something custom? Reach out via the contact form.",
   "contactUsButton": "Contact Us",
-  "price": "frá {price}{currency} nettó",
+  "price": "frá {price}{currency}",
   "getBundle": "Fáðu {bundle} pakka"
 }
