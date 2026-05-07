@@ -54,7 +54,6 @@ const Toggle: React.FC<ToggleProps> = ({ checked, onChange, disabled }) => {
 const CookieBanner: React.FC<Props> = ({ theme }) => {
     const { locale } = useLocale();
     const { dictionary, loading } = useDictionary(locale, "cookies");
-    console.log("cookies dict:", dictionary);
     const t = (key: string, fallback: string) =>
         loading ? fallback : dictionary?.[key] ?? fallback;
 
