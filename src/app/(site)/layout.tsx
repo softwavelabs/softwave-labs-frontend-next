@@ -20,7 +20,10 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                 backgroundColor: background,
                 color: text,
                 minHeight: "100vh",
-                borderColor: text
+                borderColor: text,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
             }}
         >
             <Layout theme={{ background, text, primary, secondary }}>
