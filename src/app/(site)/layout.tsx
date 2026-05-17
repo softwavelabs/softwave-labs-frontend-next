@@ -7,7 +7,6 @@ import conceptData from "@/data/conceptData.json";
 
 import { useThemeStore } from "@/store/themeStore";
 import { getColorsByIndex } from "@/components/theme/Colors";
-import CookieBanner from "@/components/theme/CookieBanner";
 import React from "react";
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
@@ -20,10 +19,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                 backgroundColor: background,
                 color: text,
                 minHeight: "100vh",
-                borderColor: text,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
+                borderColor: text
             }}
         >
             <Layout theme={{ background, text, primary, secondary }}>

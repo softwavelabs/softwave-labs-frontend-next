@@ -33,7 +33,15 @@ export const LiquidSwipeLayout: React.FC<LiquidSwipeLayoutProps> = ({ data, colo
     return (
         <Layout theme={selectedColor}>
             <Header theme={selectedColor} />
-            <Showcase data={data} theme={selectedColor} />
+            <main style={{
+                flex: 1,
+                width: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+            }}>
+                <Showcase data={data} theme={selectedColor} />
+            </main>
             <Footer data={conceptData} theme={selectedColor} />
         </Layout>
     );
