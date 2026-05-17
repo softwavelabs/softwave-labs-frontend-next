@@ -81,7 +81,7 @@ const ContactPage: React.FC = () => {
                         />
 
                         <div>
-                            <label className="block mb-2 text-xs uppercase font-bold">
+                            <label className="block mb-2 text-xs uppercase font-bold" style={{ fontFamily: "NeueMontreal Regular" }}>
                                 <p>{loading ? "" : email.label}</p>
                             </label>
                             <input
@@ -103,7 +103,7 @@ const ContactPage: React.FC = () => {
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-xs uppercase font-bold" >
+                            <label className="block mb-2 text-xs uppercase font-bold" style={{ fontFamily: "NeueMontreal Regular" }} >
                                 <p>{loading ? "" : subject.label}</p>
                             </label>
                             <input
@@ -118,7 +118,7 @@ const ContactPage: React.FC = () => {
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-xs uppercase font-bold">
+                            <label className="block mb-2 text-xs uppercase font-bold" style={{ fontFamily: "NeueMontreal Regular" }}>
                                 <p>{loading ? "" : message.label}</p>
                             </label>
                             <textarea
