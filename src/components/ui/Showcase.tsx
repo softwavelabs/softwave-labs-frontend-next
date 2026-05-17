@@ -39,7 +39,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ data, theme }) => {
             sx={{
                 display: "flex",
                 flexDirection: ["column-reverse", "row", "row"],
-                width: "100%",
+                width: "90%",
                 mt: ["0px", "10px"],
                 minHeight: ["auto", "450px"],
                 userSelect: "none",
