@@ -157,7 +157,7 @@ const PricingPage: React.FC = () => {
                                 <div key={bundle.id} className="pricing-card border-4 p-6 flex flex-col snap-start flex-shrink-0">
                                     <h2 className="text-xl font-bold mb-2">{bundle.title}</h2>
                                     <p className="text-sm opacity-80 mb-6" style={{ fontFamily: "NeueMontreal Regular" }}>{bundle.description}</p>
-                                    <div className="text-3xl font-bold mb-6">
+                                    <div className="text-2xl font-bold mb-6">
                                         {t("price", "from").replace("{price}", bundle.price).replace("{currency}", currency)}
                                     </div>
                                     {bundle.scope && bundle.scope.length > 0 && (
