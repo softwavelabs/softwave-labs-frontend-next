@@ -194,9 +194,18 @@ const PricingPage: React.FC = () => {
                         <table className="w-full text-left min-w-[600px]">
                             <thead>
                             <tr>
-                                <th className="px-6 py-4 text-sm font-semibold">Service</th>
-                                <th className="px-6 py-4 text-sm font-semibold">Scope</th>
-                                <th className="px-6 py-4 text-sm font-semibold">Price</th>
+                                <th className="px-6 py-4 text-sm font-semibold">
+                                    {t("serviceColumn", "Service")}
+                                </th>
+
+                                <th className="px-6 py-4 text-sm font-semibold">
+                                    {t("scopeColumn", "Scope")}
+                                </th>
+
+                                <th className="px-6 py-4 text-sm font-semibold">
+                                    {t("priceColumn", "Price")}
+                                </th>
+
                                 <th className="px-6 py-4" />
                             </tr>
                             </thead>

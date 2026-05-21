@@ -1,3 +1,6 @@
 {
-  "name": ""
+  "name": "",
+  "serviceColumn": "Dienstleistung",
+  "scopeColumn": "Umfang",
+  "priceColumn": "Preis"
 }
