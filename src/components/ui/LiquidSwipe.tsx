@@ -34,7 +34,7 @@ const getInitialIndex = () => {
     const saved = localStorage.getItem("liquidSwipeIndex");
     const parsed = saved ? Number(saved) : 0;
 
-    if (isNaN(parsed) || parsed === 5) {
+    if (isNaN(parsed) || parsed === 3) {
         return 0;
     }
 
