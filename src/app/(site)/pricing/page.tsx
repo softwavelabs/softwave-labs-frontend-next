@@ -213,7 +213,7 @@ const PricingPage: React.FC = () => {
                             {services.map((service) => (
                                 <tr key={service.id}>
                                     <td className="px-6 py-5">
-                                        <p className="font-medium">{service.title}</p>
+                                        <p className="font-medium" style={{ fontFamily: "NeueMontreal Regular" }}>{service.title}</p>
                                         <p className="text-sm" style={{ fontFamily: "NeueMontreal Regular" }} >{service.description}</p>
                                     </td>
                                     <td className="px-6 py-5 text-sm">
