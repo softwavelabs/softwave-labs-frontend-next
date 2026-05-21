@@ -8,9 +8,7 @@ export const devices = [
   2,
   3,
   4,
-  5,
-  // 6,
-  // 1,
+  1,
 ] as const;
 
 export const getColorsByIndex = (index: number): DeviceColors => {
