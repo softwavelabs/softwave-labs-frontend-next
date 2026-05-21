@@ -11,6 +11,7 @@ interface ScopeItem {
 
 interface Bundle {
     id: number;
+    order: number;
     title: string;
     description: string;
     price: string;
@@ -19,6 +20,7 @@ interface Bundle {
 
 interface Service {
     id: number;
+    order: number;
     title: string;
     description: string;
     price: string;
@@ -86,8 +88,8 @@ const PricingPage: React.FC = () => {
                     fetch(`/api/strapi/currency?locale=${locale}`).then((r) => r.json()),
                 ]);
 
-                setBundles(bundlesRes || []);
-                setServices(servicesRes || []);
+                setBundles((bundlesRes || []).sort((a: Bundle, b: Bundle) => a.order - b.order));
+                setServices((servicesRes || []).sort((a: Service, b: Service) => a.order - b.order));
                 setCurrency((currencyRes as Currency)?.code || "NONE");
             } catch (err) {
                 console.error("Error fetching pricing data:", err);
