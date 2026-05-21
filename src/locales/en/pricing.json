@@ -5,6 +5,6 @@
   "servicesSubtitle": "Single services tailored to your specific needs.",
   "contactTitle": "Need something custom? Reach out via the contact form.",
   "contactUsButton": "Contact Us",
-  "price": "from {price}{currency}",
+  "price": "from {price} {currency}",
   "getBundle": "Get {bundle} bundle"
 }
