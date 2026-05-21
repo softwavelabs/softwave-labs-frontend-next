@@ -45,6 +45,7 @@ const BundleButton = ({ bundle, t }: { bundle: Bundle; t: TranslationFunction })
         <button
             onClick={handleClick}
             className="mt-auto border-4 px-6 py-3 text-sm"
+            style={{ fontFamily: "NeueMontreal Regular" }}
         >
             {t("getBundle", "Get bundles").replace("{bundle}", bundle.title)}
         </button>
@@ -153,7 +154,7 @@ const PricingPage: React.FC = () => {
                             {bundles.map((bundle) => (
                                 <div key={bundle.id} className="pricing-card border-4 p-6 flex flex-col snap-start flex-shrink-0">
                                     <h2 className="text-xl font-bold mb-2">{bundle.title}</h2>
-                                    <p className="text-sm opacity-80 mb-6">{bundle.description}</p>
+                                    <p className="text-sm opacity-80 mb-6" style={{ fontFamily: "NeueMontreal Regular" }}>{bundle.description}</p>
                                     <div className="text-3xl font-bold mb-6">
                                         {t("price", "from").replace("{price}", bundle.price).replace("{currency}", currency)}
                                     </div>
@@ -202,7 +203,7 @@ const PricingPage: React.FC = () => {
                                 <tr key={service.id}>
                                     <td className="px-6 py-5">
                                         <p className="font-medium">{service.title}</p>
-                                        <p className="text-sm" >{service.description}</p>
+                                        <p className="text-sm" style={{ fontFamily: "NeueMontreal Regular" }} >{service.description}</p>
                                     </td>
                                     <td className="px-6 py-5 text-sm">
                                         <ul className="space-y-1" style={{ fontFamily: "NeueMontreal Regular" }}>
