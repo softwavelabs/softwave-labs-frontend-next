@@ -135,9 +135,7 @@ const ArticlePage: React.FC = () => {
 
     if (isLoading)
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <p style={{ fontFamily: "DotGothic16 Regular" }}>{dictionary?.loading || "Loading..."}</p>
-            </div>
+            <div className="min-h-screen flex items-center justify-center"></div>
         );
 
     if (error || !article)
@@ -151,7 +149,7 @@ const ArticlePage: React.FC = () => {
         );
 
     return (
-        <main className="min-h-screen p-5">
+        <main className="min-h-screen p-5 pt-20">
             <div className="max-w-5xl mx-auto">
                 {showingFallback && (
                     <div className="mb-6 p-4 bg-yellow-50 border border-yellow-200 rounded">
@@ -226,33 +224,33 @@ const ArticlePage: React.FC = () => {
                     }
                 })}
 
-                {/* Other articles */}
-                {articles.length > 0 && (
-                    <aside className="py-16">
-                        <h2 className="text-2xl font-bold mb-4">{dictionary?.other_articles || "Other articles"}</h2>
-                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                            {articles
-                                .filter((a) => a.id !== article.id && a.slug)
-                                .slice(0, 4)
-                                .map((a) => (
-                                    <article key={a.id}>
-                                        <a href={`/blog/${a.slug}`}>
-                                            {a.cover?.url && (
-                                                <Image
-                                                    src={`${process.env.NEXT_PUBLIC_API_URL}${a.cover.url}`}
-                                                    alt={a.title}
-                                                    width={400}
-                                                    height={200}
-                                                    className="rounded-xl object-cover"
-                                                />
-                                            )}
-                                            <h3 className="font-bold mt-2">{a.title}</h3>
-                                        </a>
-                                    </article>
-                                ))}
-                        </div>
-                    </aside>
-                )}
+                {/*/!* Other articles *!/*/}
+                {/*{articles.length > 0 && (*/}
+                {/*    <aside className="py-16">*/}
+                {/*        <h2 className="text-2xl font-bold mb-4">{dictionary?.other_articles || "Other articles"}</h2>*/}
+                {/*        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">*/}
+                {/*            {articles*/}
+                {/*                .filter((a) => a.id !== article.id && a.slug)*/}
+                {/*                .slice(0, 4)*/}
+                {/*                .map((a) => (*/}
+                {/*                    <article key={a.id}>*/}
+                {/*                        <a href={`/blog/${a.slug}`}>*/}
+                {/*                            {a.cover?.url && (*/}
+                {/*                                <Image*/}
+                {/*                                    src={`${process.env.NEXT_PUBLIC_API_URL}${a.cover.url}`}*/}
+                {/*                                    alt={a.title}*/}
+                {/*                                    width={400}*/}
+                {/*                                    height={200}*/}
+                {/*                                    className="rounded-xl object-cover"*/}
+                {/*                                />*/}
+                {/*                            )}*/}
+                {/*                            <h3 className="font-bold mt-2">{a.title}</h3>*/}
+                {/*                        </a>*/}
+                {/*                    </article>*/}
+                {/*                ))}*/}
+                {/*        </div>*/}
+                {/*    </aside>*/}
+                {/*)}*/}
             </div>
         </main>
     );
