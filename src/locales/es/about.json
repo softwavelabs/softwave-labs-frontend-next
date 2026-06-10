@@ -1,0 +1,24 @@
+{
+  "title": "Sobre nosotros",
+  "subtitle": "Quiénes somos y qué desarrollamos.",
+  "paragraphs": [
+    "Somos un equipo especializado en la creación de soluciones digitales modernas, eficientes y personalizadas. Cada día colaboramos con empresas para desarrollar software, automatizar procesos y construir sistemas escalables que apoyen su crecimiento y mejoren la eficiencia operativa.",
+    "Llevamos a cabo proyectos en diversas áreas, incluidas plataformas de comercio electrónico, sistemas de gestión empresarial, aplicaciones que simplifican las tareas cotidianas y herramientas que automatizan los procesos de negocio. Esto permite a nuestros clientes obtener no solo soluciones funcionales, sino también beneficios tangibles: ahorro de tiempo, mejora del flujo de trabajo, aumento de las ventas y mayor satisfacción de los usuarios.",
+    "En función de los requisitos del proyecto, colaboramos estrechamente con diseñadores, testers y otros especialistas experimentados, lo que nos permite gestionar eficazmente tanto tareas más pequeñas como proyectos de mediana y gran envergadura que requieren trabajo en equipo coordinado.",
+    "Priorizamos la comunicación clara, los enfoques flexibles y una comprensión profunda de los objetivos empresariales de nuestros clientes. Nuestra misión es ofrecer soluciones que no solo funcionen a la perfección, sino que también apoyen activamente el crecimiento del negocio, simplifiquen las operaciones diarias y ayuden a obtener mejores resultados."
+  ],
+  "values": [
+    {
+      "title": "Precisión",
+      "description": "Código limpio, estructura clara y atención al detalle en todo lo que desarrollamos."
+    },
+    {
+      "title": "Innovación",
+      "description": "Superamos límites y exploramos nuevas ideas para crear soluciones que destaquen."
+    },
+    {
+      "title": "Fiabilidad",
+      "description": "Asociaciones a largo plazo basadas en la confianza, la transparencia y la entrega constante."
+    }
+  ]
+}

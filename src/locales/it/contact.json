@@ -1,0 +1,17 @@
+{
+  "title": "Contatti",
+  "subtitle": "Diteci come possiamo aiutarvi.",
+  "email": {
+    "label": "La tua email",
+    "placeholder": "nome@email.com"
+  },
+  "subject": {
+    "label": "Oggetto",
+    "placeholder": "Diteci come possiamo aiutarvi"
+  },
+  "message": {
+    "label": "Il tuo messaggio",
+    "placeholder": "Lascia qui il tuo messaggio..."
+  },
+  "sendButton": "Invia messaggio"
+}

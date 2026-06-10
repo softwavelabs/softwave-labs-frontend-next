@@ -1,0 +1,38 @@
+[
+  {
+    "id": "interactive",
+    "title": "Sites web interactifs",
+    "subtitle": "Des visuels captivants et des expériences interactives.",
+    "caption": "Créez des graphiques interactifs et des animations fascinants qui captent l'attention."
+  },
+  {
+    "id": "ecommerce",
+    "title": "E-commerce",
+    "subtitle": "Développez votre activité avec une boutique en ligne puissante.",
+    "caption": "Lancez et optimisez des boutiques en ligne qui attirent les clients, augmentent les ventes et simplifient les opérations."
+  },
+  {
+    "id": "ai",
+    "title": "IA & Automatisation",
+    "subtitle": "Des outils plus intelligents pour analyser les données et automatiser les processus.",
+    "caption": "Mettez en place des systèmes intelligents qui aident votre entreprise à prendre des décisions basées sur les données, à automatiser les tâches répétitives et à anticiper les tendances."
+  },
+  {
+    "id": "design",
+    "title": "Design UX/UI",
+    "subtitle": "Des interfaces intuitives qui améliorent l'expérience utilisateur.",
+    "caption": "Concevez des interfaces claires, attrayantes et conviviales qui renforcent votre marque et augmentent la satisfaction des clients."
+  },
+  {
+    "id": "consulting",
+    "title": "Conseil technique",
+    "subtitle": "Un accompagnement expert pour des systèmes évolutifs et fiables.",
+    "caption": "Conseil en architecture système, conception de bases de données, sélection de stack technologique et optimisation du code."
+  },
+  {
+    "id": "web",
+    "title": "Applications web",
+    "subtitle": "Des solutions web sur mesure adaptées à votre vision.",
+    "caption": "Applications web professionnelles et sites entièrement personnalisés, incluant des fonctionnalités intelligentes alimentées par l'apprentissage automatique."
+  }
+]

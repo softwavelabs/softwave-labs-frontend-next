@@ -1,24 +1,24 @@
 {
   "title": "Über uns",
-  "subtitle": "Wer wir sind und was wir erschaffen.",
+  "subtitle": "Wer wir sind und was wir entwickeln.",
   "paragraphs": [
-    "Das Konzept für unser Unternehmen entstand 2024, und offiziell gestartet sind wir 2025. Seitdem haben wir uns als Team zusammengefunden und eine vielfältige Expertise in modernen Technologien und kreativen Disziplinen kombiniert.",
-    "Unser Skillset umfasst mehrere Programmiersprachen, Softwaretests, SEO, Hosting-Lösungen, kreative Installationen und Grafikdesign. Diese breite Grundlage ermöglicht es uns, Projekte ganzheitlich anzugehen – vom Konzept und Design bis zur Entwicklung und Implementierung.",
-    "Unser Wissen wurde durch eine Vielzahl spannender Projekte geformt, an denen wir teilnehmen durften. Jede Zusammenarbeit hat unsere Fähigkeit gestärkt, durchdachte, zuverlässige und wirkungsvolle digitale Lösungen zu liefern.",
-    "Heute liegt unser Hauptfokus auf dem skandinavischen Markt, wo wir eine wachsende Nachfrage nach modernen, hochwertigen IT-Lösungen sehen. Unser Ziel ist es, diese Nachfrage durch technische Präzision mit einem innovativen und zukunftsorientierten Ansatz zu erfüllen."
+    "Wir sind ein Team, das sich auf die Entwicklung moderner, effizienter und maßgeschneiderter digitaler Lösungen spezialisiert hat. Täglich arbeiten wir mit Unternehmen zusammen, um Software zu entwickeln, Prozesse zu automatisieren und skalierbare Systeme aufzubauen, die ihr Wachstum unterstützen und die betriebliche Effizienz verbessern.",
+    "Wir realisieren Projekte in verschiedenen Bereichen, darunter E-Commerce-Plattformen, Unternehmensverwaltungssysteme, Anwendungen zur Vereinfachung alltäglicher Aufgaben sowie Tools zur Automatisierung von Geschäftsprozessen. Dadurch gewinnen unsere Kunden nicht nur funktionale Lösungen, sondern auch greifbare Vorteile – Zeitersparnis, verbesserte Arbeitsabläufe sowie höhere Umsätze und Nutzerzufriedenheit.",
+    "Je nach Projektanforderungen arbeiten wir eng mit erfahrenen Designern, Testern und anderen Spezialisten zusammen, was es uns ermöglicht, sowohl kleinere Aufgaben als auch mittelgroße bis große Projekte, die koordinierte Teamarbeit erfordern, effektiv zu bewältigen.",
+    "Wir legen großen Wert auf klare Kommunikation, flexible Herangehensweisen und ein tiefes Verständnis der geschäftlichen Ziele unserer Kunden. Unsere Mission ist es, Lösungen zu liefern, die nicht nur einwandfrei funktionieren, sondern auch aktiv das Unternehmenswachstum unterstützen, den Arbeitsalltag vereinfachen und dabei helfen, bessere Ergebnisse zu erzielen."
   ],
   "values": [
     {
       "title": "Präzision",
-      "description": "Sauberer Code, klare Struktur und Liebe zum Detail in allem, was wir erschaffen."
+      "description": "Sauberer Code, klare Struktur und Liebe zum Detail in allem, was wir entwickeln."
     },
     {
       "title": "Innovation",
-      "description": "Wir überschreiten Grenzen und erkunden neue Ideen, um Lösungen zu schaffen, die herausstechen."
+      "description": "Wir überschreiten Grenzen und erkunden neue Ideen, um herausragende Lösungen zu schaffen."
     },
     {
       "title": "Zuverlässigkeit",
-      "description": "Langfristige Partnerschaften, die auf Vertrauen, Transparenz und konsistenter Lieferung basieren."
+      "description": "Langfristige Partnerschaften, die auf Vertrauen, Transparenz und konsequenter Lieferung basieren."
     }
   ]
 }

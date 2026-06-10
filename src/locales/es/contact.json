@@ -1,0 +1,17 @@
+{
+  "title": "Contacto",
+  "subtitle": "Cuéntenos cómo podemos ayudarle.",
+  "email": {
+    "label": "Su correo electrónico",
+    "placeholder": "nombre@email.com"
+  },
+  "subject": {
+    "label": "Asunto",
+    "placeholder": "Cuéntenos cómo podemos ayudarle"
+  },
+  "message": {
+    "label": "Su mensaje",
+    "placeholder": "Deje su mensaje aquí..."
+  },
+  "sendButton": "Enviar mensaje"
+}

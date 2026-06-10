@@ -1,3 +1,50 @@
 {
-
+  "title": "FAQ",
+  "subtitle": "Häufig gestellte Fragen",
+  "items": [
+    {
+      "q": "Wie lange dauert die Erstellung einer Website?",
+      "a": "Zwischen 7 und 21 Werktagen, abhängig von der Komplexität des Projekts."
+    },
+    {
+      "q": "Bieten Sie Hosting an?",
+      "a": "Ja, ich helfe bei der Konfiguration von Hosting und Domain."
+    },
+    {
+      "q": "Was kostet eine Website?",
+      "a": "Die Preise beginnen ab 500 £ für eine einfache Broschüren-Website. Kontaktieren Sie mich für ein kostenloses Angebot."
+    },
+    {
+      "q": "Wird ein Vertrag abgeschlossen?",
+      "a": "Ja, jedes Projekt wird durch einen Vertrag abgesichert, der beide Parteien schützt."
+    },
+    {
+      "q": "Wie funktioniert die Zahlung?",
+      "a": "50 % Anzahlung vor Beginn der Arbeit, 50 % bei Lieferung. Bei größeren Projekten sind Ratenzahlungen möglich."
+    },
+    {
+      "q": "Kann ich die Website selbst bearbeiten?",
+      "a": "Ja! Ich baue auf CMS-Plattformen wie WordPress, sodass Sie Inhalte problemlos ohne technische Kenntnisse aktualisieren können."
+    },
+    {
+      "q": "Wird die Website SEO-optimiert sein?",
+      "a": "Ja – jede Website enthält grundlegende On-Page-SEO-Elemente: Titel, Meta-Beschreibungen, Überschriftenstruktur und schnelle Ladezeiten."
+    },
+    {
+      "q": "Wird die Website auf Mobilgeräten funktionieren?",
+      "a": "Absolut. Alle Websites werden mit Responsive Web Design für Smartphones, Tablets und Desktop-Computer erstellt."
+    },
+    {
+      "q": "Was muss ich vor dem Start vorbereiten?",
+      "a": "Idealerweise: ein Logo, Seitentexte, Fotos und Beispiele von Websites, die Ihnen gefallen."
+    },
+    {
+      "q": "Bieten Sie Support nach dem Launch an?",
+      "a": "Ja – Überarbeitungen sind 30 Tage lang kostenlos. Kostenpflichtige Wartungspakete sind ebenfalls verfügbar."
+    },
+    {
+      "q": "Was passiert, wenn ich mit dem Ergebnis nicht zufrieden bin?",
+      "a": "Vor dem Launch durchlaufen wir eine Freigabephase, in der Sie Überarbeitungen anfordern können. Ich arbeite so lange, bis Sie zufrieden sind."
+    }
+  ]
 }

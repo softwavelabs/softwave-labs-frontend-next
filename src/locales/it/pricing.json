@@ -1,0 +1,13 @@
+{
+  "bundlesTitle": "Pacchetti",
+  "bundlesSubtitle": "Pacchetti semplici. Nessun costo nascosto.",
+  "servicesTitle": "Servizi",
+  "servicesSubtitle": "Servizi singoli su misura per le vostre esigenze specifiche.",
+  "contactTitle": "Hai bisogno di qualcosa di personalizzato? Contattaci tramite il modulo di contatto.",
+  "contactUsButton": "Contattaci",
+  "price": "da {price} {currency}",
+  "getBundle": "Ottieni il pacchetto {bundle}",
+  "serviceColumn": "Servizio",
+  "scopeColumn": "Ambito",
+  "priceColumn": "Prezzo"
+}

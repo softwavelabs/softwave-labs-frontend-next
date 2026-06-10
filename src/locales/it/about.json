@@ -1,0 +1,24 @@
+{
+  "title": "Chi siamo",
+  "subtitle": "Chi siamo e cosa sviluppiamo.",
+  "paragraphs": [
+    "Siamo un team specializzato nella creazione di soluzioni digitali moderne, efficienti e personalizzate. Ogni giorno collaboriamo con le aziende per sviluppare software, automatizzare processi e costruire sistemi scalabili che supportino la loro crescita e migliorino l'efficienza operativa.",
+    "Realizziamo progetti in vari ambiti, tra cui piattaforme e-commerce, sistemi di gestione aziendale, applicazioni che semplificano le attività quotidiane e strumenti che automatizzano i processi aziendali. Questo permette ai nostri clienti di ottenere non solo soluzioni funzionali, ma anche vantaggi concreti: risparmio di tempo, miglioramento del flusso di lavoro, aumento delle vendite e maggiore soddisfazione degli utenti.",
+    "In base ai requisiti del progetto, collaboriamo strettamente con designer, tester e altri specialisti esperti, il che ci permette di gestire efficacemente sia incarichi più piccoli che progetti di medie e grandi dimensioni che richiedono un lavoro di squadra coordinato.",
+    "Diamo priorità a una comunicazione chiara, ad approcci flessibili e a una comprensione approfondita degli obiettivi aziendali dei nostri clienti. La nostra missione è fornire soluzioni che non solo funzionino perfettamente, ma che supportino attivamente la crescita aziendale, semplifichino le operazioni quotidiane e aiutino a ottenere risultati migliori."
+  ],
+  "values": [
+    {
+      "title": "Precisione",
+      "description": "Codice pulito, struttura chiara e attenzione ai dettagli in tutto ciò che sviluppiamo."
+    },
+    {
+      "title": "Innovazione",
+      "description": "Spingiamo i confini ed esploriamo nuove idee per creare soluzioni che si distinguano."
+    },
+    {
+      "title": "Affidabilità",
+      "description": "Partnership a lungo termine fondate su fiducia, trasparenza e consegna costante."
+    }
+  ]
+}

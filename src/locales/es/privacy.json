@@ -1,0 +1,66 @@
+{
+  "title": "Política de privacidad",
+  "subtitle": "Normas para el tratamiento de sus datos personales",
+  "sections": [
+    {
+      "title": "1. Información general",
+      "content": [
+        "Esta política se aplica al sitio web softwave-labs.com.",
+        "El responsable del tratamiento de datos es A. Tabaczka, Beyond Office, Fabryka Norblina, Żelazna 51/53 edificio C, 00-841 Varsovia, Polonia.",
+        "Contacto con el responsable del tratamiento: softwavelabs@protonmail.com",
+        "El servicio trata datos con el fin de gestionar formularios de contacto, cumplir con los servicios solicitados y realizar marketing directo."
+      ]
+    },
+    {
+      "title": "2. Protección de datos",
+      "content": [
+        "La conexión al sitio web está cifrada mediante un certificado SSL.",
+        "Las contraseñas de los usuarios se almacenan en forma de hash — no es posible revertirlas.",
+        "El operador actualiza regularmente el software utilizado para el tratamiento de datos."
+      ]
+    },
+    {
+      "title": "3. Alojamiento e infraestructura",
+      "content": [
+        "El servicio está alojado por proveedores externos de servicios en la nube.",
+        "Los proveedores pueden procesar datos técnicos como la dirección IP, registros del servidor, URL, hora de la solicitud e información del navegador.",
+        "Actualmente utilizamos los servicios de Vercel y Render."
+      ]
+    },
+    {
+      "title": "4. Sus derechos",
+      "content": [
+        "Tiene derecho a acceder a sus datos, rectificarlos, suprimirlos, limitar su tratamiento y transferirlos.",
+        "Puede oponerse al tratamiento de sus datos con fines de marketing.",
+        "Tiene derecho a presentar una reclamación ante el Presidente de la Oficina de Protección de Datos Personales, ul. Stawki 2, 00-193 Varsovia, Polonia.",
+        "Los datos no se transfieren fuera de la Unión Europea."
+      ]
+    },
+    {
+      "title": "5. Formularios",
+      "content": [
+        "El servicio recopila datos proporcionados voluntariamente por el usuario en los formularios de contacto.",
+        "Los datos se tratan únicamente para gestionar la solicitud o establecer contacto comercial.",
+        "El servicio puede almacenar parámetros de conexión como la hora y la dirección IP."
+      ]
+    },
+    {
+      "title": "6. Técnicas de marketing",
+      "content": [
+        "El servicio utiliza Google Analytics para el análisis anónimo del tráfico.",
+        "Se utilizan técnicas de remarketing para adaptar los anuncios al comportamiento del usuario — sin transferencia de datos personales.",
+        "El servicio utiliza el píxel de Facebook, que informa a Facebook sobre las visitas al sitio web.",
+        "Se utilizan mapas de calor y grabaciones del comportamiento de los usuarios — los datos se anonimizan antes de ser transmitidos."
+      ]
+    },
+    {
+      "title": "7. Cookies",
+      "content": [
+        "El servicio utiliza cookies — archivos de texto almacenados en el dispositivo del usuario.",
+        "Las cookies se utilizan para mantener las sesiones de los usuarios y con fines de marketing.",
+        "Se utilizan dos tipos de cookies: cookies de sesión (temporales) y cookies persistentes (almacenadas durante un período determinado).",
+        "Los usuarios pueden gestionar las cookies a través de la configuración del navegador: Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
+}

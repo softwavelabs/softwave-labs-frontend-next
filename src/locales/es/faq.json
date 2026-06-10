@@ -1,0 +1,50 @@
+{
+  "title": "FAQ",
+  "subtitle": "Preguntas frecuentes",
+  "items": [
+    {
+      "q": "¿Cuánto tiempo se tarda en crear un sitio web?",
+      "a": "Entre 7 y 21 días laborables, según la complejidad del proyecto."
+    },
+    {
+      "q": "¿Ofrecen alojamiento web?",
+      "a": "Sí, ayudo con la configuración del alojamiento y del dominio."
+    },
+    {
+      "q": "¿Cuánto cuesta un sitio web?",
+      "a": "Los precios comienzan desde 500 £ para un sitio de presentación sencillo. Contácteme para un presupuesto gratuito."
+    },
+    {
+      "q": "¿Firman un contrato?",
+      "a": "Sí, cada proyecto está cubierto por un contrato que protege a ambas partes."
+    },
+    {
+      "q": "¿Cómo funciona el pago?",
+      "a": "50 % de anticipo antes de comenzar el trabajo, 50 % a la entrega. Se permiten pagos a plazos para proyectos más grandes."
+    },
+    {
+      "q": "¿Puedo editar el sitio web yo mismo?",
+      "a": "¡Sí! Trabajo con plataformas CMS como WordPress para que pueda actualizar el contenido fácilmente sin conocimientos técnicos."
+    },
+    {
+      "q": "¿El sitio estará optimizado para SEO?",
+      "a": "Sí — cada sitio incluye los fundamentos del SEO on-page: títulos, meta descripciones, estructura de encabezados y carga rápida."
+    },
+    {
+      "q": "¿El sitio funcionará en móvil?",
+      "a": "Por supuesto. Todos los sitios se construyen con diseño web responsivo para teléfonos, tabletas y escritorios."
+    },
+    {
+      "q": "¿Qué debo preparar antes de empezar?",
+      "a": "Idealmente: un logotipo, textos de las páginas, fotos y ejemplos de sitios que le gusten."
+    },
+    {
+      "q": "¿Ofrecen soporte después del lanzamiento?",
+      "a": "Sí — las revisiones son gratuitas durante 30 días. También hay disponibles paquetes de mantenimiento de pago."
+    },
+    {
+      "q": "¿Qué pasa si no estoy satisfecho con el resultado?",
+      "a": "Pasamos por una fase de aprobación antes del lanzamiento donde puede solicitar revisiones. Trabajo hasta que esté satisfecho."
+    }
+  ]
+}

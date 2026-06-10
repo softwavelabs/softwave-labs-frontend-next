@@ -2,8 +2,8 @@
   "title": "Kontakt",
   "subtitle": "Lassen Sie uns wissen, wie wir Ihnen helfen können.",
   "email": {
-    "label": "Ihre E-Mail-Adresse",
-    "placeholder": "name@email.de"
+    "label": "Ihre E-Mail",
+    "placeholder": "name@email.com"
   },
   "subject": {
     "label": "Betreff",
@@ -11,6 +11,7 @@
   },
   "message": {
     "label": "Ihre Nachricht",
-    "placeholder": "Schreiben Sie Ihre Nachricht hier..."
-  }
+    "placeholder": "Hinterlassen Sie hier Ihre Nachricht..."
+  },
+  "sendButton": "Nachricht senden"
 }

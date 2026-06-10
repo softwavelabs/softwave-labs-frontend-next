@@ -1,0 +1,66 @@
+{
+  "title": "Informativa sulla privacy",
+  "subtitle": "Norme per il trattamento dei vostri dati personali",
+  "sections": [
+    {
+      "title": "1. Informazioni generali",
+      "content": [
+        "Questa informativa si applica al sito web softwave-labs.com.",
+        "Il titolare del trattamento dei dati è A. Tabaczka, Beyond Office, Fabryka Norblina, Żelazna 51/53 edificio C, 00-841 Varsavia, Polonia.",
+        "Contatto con il titolare del trattamento: softwavelabs@protonmail.com",
+        "Il servizio tratta i dati per le finalità di gestione dei moduli di contatto, esecuzione dei servizi ordinati e conduzione del marketing diretto."
+      ]
+    },
+    {
+      "title": "2. Protezione dei dati",
+      "content": [
+        "La connessione al sito web è crittografata mediante un certificato SSL.",
+        "Le password degli utenti sono memorizzate in forma di hash — non è possibile recuperarle.",
+        "L'operatore aggiorna regolarmente il software utilizzato per il trattamento dei dati."
+      ]
+    },
+    {
+      "title": "3. Hosting e infrastruttura",
+      "content": [
+        "Il servizio è ospitato da fornitori esterni di servizi cloud.",
+        "I fornitori possono trattare dati tecnici come indirizzo IP, log del server, URL, orario della richiesta e informazioni sul browser.",
+        "Utilizziamo attualmente i servizi Vercel e Render."
+      ]
+    },
+    {
+      "title": "4. I vostri diritti",
+      "content": [
+        "Avete il diritto di accedere ai vostri dati, rettificarli, cancellarli, limitarne il trattamento e trasferirli.",
+        "Potete opporvi al trattamento dei vostri dati per finalità di marketing.",
+        "Avete il diritto di presentare un reclamo al Presidente dell'Ufficio per la protezione dei dati personali, ul. Stawki 2, 00-193 Varsavia, Polonia.",
+        "I dati non vengono trasferiti al di fuori dell'Unione Europea."
+      ]
+    },
+    {
+      "title": "5. Moduli",
+      "content": [
+        "Il servizio raccoglie i dati forniti volontariamente dall'utente nei moduli di contatto.",
+        "I dati vengono trattati esclusivamente per gestire la richiesta o stabilire un contatto commerciale.",
+        "Il servizio può memorizzare parametri di connessione come l'orario e l'indirizzo IP."
+      ]
+    },
+    {
+      "title": "6. Tecniche di marketing",
+      "content": [
+        "Il servizio utilizza Google Analytics per l'analisi anonima del traffico.",
+        "Vengono utilizzate tecniche di remarketing per adattare gli annunci al comportamento degli utenti — senza trasferimento di dati personali.",
+        "Il servizio utilizza il pixel di Facebook, che informa Facebook delle visite al sito web.",
+        "Vengono utilizzate heatmap e registrazioni del comportamento degli utenti — i dati vengono anonimizzati prima di essere trasmessi."
+      ]
+    },
+    {
+      "title": "7. Cookie",
+      "content": [
+        "Il servizio utilizza i cookie — file di testo memorizzati sul dispositivo dell'utente.",
+        "I cookie vengono utilizzati per mantenere le sessioni degli utenti e per finalità di marketing.",
+        "Vengono utilizzati due tipi di cookie: cookie di sessione (temporanei) e cookie persistenti (memorizzati per un periodo determinato).",
+        "Gli utenti possono gestire i cookie tramite le impostazioni del browser: Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
+}

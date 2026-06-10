@@ -1,0 +1,66 @@
+{
+  "title": "Politique de confidentialité",
+  "subtitle": "Règles de traitement de vos données personnelles",
+  "sections": [
+    {
+      "title": "1. Informations générales",
+      "content": [
+        "Cette politique s'applique au site web softwave-labs.com.",
+        "Le responsable du traitement des données est A. Tabaczka, Beyond Office, Fabryka Norblina, Żelazna 51/53 bâtiment C, 00-841 Varsovie, Pologne.",
+        "Contact avec le responsable du traitement : softwavelabs@protonmail.com",
+        "Le service traite les données aux fins de la gestion des formulaires de contact, de l'exécution des services commandés et de la conduite du marketing direct."
+      ]
+    },
+    {
+      "title": "2. Protection des données",
+      "content": [
+        "La connexion au site web est chiffrée à l'aide d'un certificat SSL.",
+        "Les mots de passe des utilisateurs sont stockés sous forme hachée — il est impossible de les reconvertir.",
+        "L'opérateur met régulièrement à jour les logiciels utilisés pour le traitement des données."
+      ]
+    },
+    {
+      "title": "3. Hébergement et infrastructure",
+      "content": [
+        "Le service est hébergé par des fournisseurs de services cloud externes.",
+        "Les fournisseurs peuvent traiter des données techniques telles que l'adresse IP, les journaux serveur, les URL, l'heure de la requête et les informations sur le navigateur.",
+        "Nous utilisons actuellement les services Vercel et Render."
+      ]
+    },
+    {
+      "title": "4. Vos droits",
+      "content": [
+        "Vous avez le droit d'accéder à vos données, de les rectifier, de les supprimer, d'en limiter le traitement et de les transférer.",
+        "Vous pouvez vous opposer au traitement de vos données à des fins marketing.",
+        "Vous avez le droit de déposer une plainte auprès du Président de l'Office de protection des données personnelles, ul. Stawki 2, 00-193 Varsovie, Pologne.",
+        "Les données ne sont pas transférées en dehors de l'Union européenne."
+      ]
+    },
+    {
+      "title": "5. Formulaires",
+      "content": [
+        "Le service collecte les données fournies volontairement par l'utilisateur dans les formulaires de contact.",
+        "Les données sont traitées uniquement pour traiter la demande ou établir un contact commercial.",
+        "Le service peut stocker des paramètres de connexion tels que l'heure et l'adresse IP."
+      ]
+    },
+    {
+      "title": "6. Techniques marketing",
+      "content": [
+        "Le service utilise Google Analytics pour l'analyse anonyme du trafic.",
+        "Des techniques de remarketing sont utilisées pour adapter les publicités au comportement des utilisateurs — sans transfert de données personnelles.",
+        "Le service utilise le pixel Facebook, qui informe Facebook des visites sur le site web.",
+        "Des heatmaps et des enregistrements du comportement des utilisateurs sont utilisés — les données sont anonymisées avant d'être transmises."
+      ]
+    },
+    {
+      "title": "7. Cookies",
+      "content": [
+        "Le service utilise des cookies — des fichiers texte stockés sur l'appareil de l'utilisateur.",
+        "Les cookies sont utilisés pour maintenir les sessions utilisateur et à des fins marketing.",
+        "Deux types de cookies sont utilisés : les cookies de session (temporaires) et les cookies persistants (stockés pour une durée déterminée).",
+        "Les utilisateurs peuvent gérer les cookies via les paramètres du navigateur : Chrome, Firefox, Safari, Edge, Opera."
+      ]
+    }
+  ]
+}

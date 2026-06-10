@@ -18,8 +18,10 @@ interface HeaderProps {
 
 const LANGUAGES = [
     { code: 'en', label: 'EN' },
-    // { code: 'is', label: 'IS' },
-    { code: 'nb', label: 'NO' },
+    { code: 'de', label: 'DE' },
+    { code: 'fr', label: 'FR' },
+    { code: 'es', label: 'ES'},
+    { code: 'it', label: 'IT'},
     { code: 'pl', label: 'PL' },
 ];
 

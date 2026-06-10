@@ -1,0 +1,38 @@
+[
+  {
+    "id": "interactive",
+    "title": "Sitios web interactivos",
+    "subtitle": "Visuales atractivos y experiencias interactivas.",
+    "caption": "Cree gráficos interactivos y animaciones fascinantes que capten la atención."
+  },
+  {
+    "id": "ecommerce",
+    "title": "Comercio electrónico",
+    "subtitle": "Haga crecer su negocio con una potente tienda online.",
+    "caption": "Lance y optimice tiendas online que atraigan clientes, aumenten las ventas y simplifiquen las operaciones."
+  },
+  {
+    "id": "ai",
+    "title": "IA y Automatización",
+    "subtitle": "Herramientas más inteligentes para analizar datos y automatizar procesos.",
+    "caption": "Implemente sistemas inteligentes que ayuden a su empresa a tomar decisiones basadas en datos, automatizar tareas repetitivas y predecir tendencias."
+  },
+  {
+    "id": "design",
+    "title": "Diseño UX/UI",
+    "subtitle": "Interfaces intuitivas que elevan la experiencia del usuario.",
+    "caption": "Diseñe interfaces claras, atractivas y fáciles de usar que fortalezcan su marca y aumenten la satisfacción del cliente."
+  },
+  {
+    "id": "consulting",
+    "title": "Consultoría técnica",
+    "subtitle": "Orientación experta para sistemas escalables y fiables.",
+    "caption": "Consultoría sobre arquitectura de sistemas, diseño de bases de datos, selección de stack tecnológico y optimización de código."
+  },
+  {
+    "id": "web",
+    "title": "Aplicaciones web",
+    "subtitle": "Soluciones web a medida adaptadas a su visión.",
+    "caption": "Aplicaciones web profesionales y sitios completamente personalizados, incluidas funcionalidades inteligentes basadas en aprendizaje automático."
+  }
+]

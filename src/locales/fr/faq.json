@@ -1,0 +1,50 @@
+{
+  "title": "FAQ",
+  "subtitle": "Questions fréquemment posées",
+  "items": [
+    {
+      "q": "Combien de temps faut-il pour créer un site web ?",
+      "a": "Entre 7 et 21 jours ouvrables, selon la complexité du projet."
+    },
+    {
+      "q": "Proposez-vous l'hébergement ?",
+      "a": "Oui, j'aide à la configuration de l'hébergement et du domaine."
+    },
+    {
+      "q": "Combien coûte un site web ?",
+      "a": "Les prix commencent à partir de 500 £ pour un site vitrine simple. Contactez-moi pour un devis gratuit."
+    },
+    {
+      "q": "Signez-vous un contrat ?",
+      "a": "Oui, chaque projet est couvert par un contrat qui protège les deux parties."
+    },
+    {
+      "q": "Comment fonctionne le paiement ?",
+      "a": "50 % d'acompte avant le début des travaux, 50 % à la livraison. Des paiements échelonnés sont possibles pour les projets plus importants."
+    },
+    {
+      "q": "Puis-je modifier le site moi-même ?",
+      "a": "Oui ! Je travaille sur des plateformes CMS comme WordPress pour que vous puissiez facilement mettre à jour le contenu sans connaissances techniques."
+    },
+    {
+      "q": "Le site sera-t-il optimisé pour le référencement ?",
+      "a": "Oui — chaque site comprend les bases du SEO on-page : titres, méta-descriptions, structure des titres et chargement rapide."
+    },
+    {
+      "q": "Le site fonctionnera-t-il sur mobile ?",
+      "a": "Absolument. Tous les sites sont construits avec un design responsive pour les téléphones, tablettes et ordinateurs de bureau."
+    },
+    {
+      "q": "Que dois-je préparer avant de commencer ?",
+      "a": "Idéalement : un logo, les textes des pages, des photos et des exemples de sites que vous aimez."
+    },
+    {
+      "q": "Proposez-vous un support après le lancement ?",
+      "a": "Oui — les révisions sont gratuites pendant 30 jours. Des forfaits de maintenance payants sont également disponibles."
+    },
+    {
+      "q": "Que se passe-t-il si je ne suis pas satisfait du résultat ?",
+      "a": "Nous passons par une phase de validation avant le lancement où vous pouvez demander des modifications. Je travaille jusqu'à votre entière satisfaction."
+    }
+  ]
+}

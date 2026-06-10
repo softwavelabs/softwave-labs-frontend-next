@@ -1,0 +1,50 @@
+{
+  "title": "FAQ",
+  "subtitle": "Domande frequenti",
+  "items": [
+    {
+      "q": "Quanto tempo ci vuole per creare un sito web?",
+      "a": "Tra 7 e 21 giorni lavorativi, a seconda della complessità del progetto."
+    },
+    {
+      "q": "Offrite l'hosting?",
+      "a": "Sì, aiuto con la configurazione dell'hosting e del dominio."
+    },
+    {
+      "q": "Quanto costa un sito web?",
+      "a": "I prezzi partono da 500 £ per un sito vetrina semplice. Contattatemi per un preventivo gratuito."
+    },
+    {
+      "q": "Viene firmato un contratto?",
+      "a": "Sì, ogni progetto è coperto da un contratto che tutela entrambe le parti."
+    },
+    {
+      "q": "Come funziona il pagamento?",
+      "a": "50% di acconto prima dell'inizio dei lavori, 50% alla consegna. Per i progetti più grandi sono disponibili pagamenti rateali."
+    },
+    {
+      "q": "Posso modificare il sito web da solo?",
+      "a": "Sì! Lavoro su piattaforme CMS come WordPress in modo che possiate aggiornare i contenuti facilmente senza conoscenze tecniche."
+    },
+    {
+      "q": "Il sito sarà ottimizzato per la SEO?",
+      "a": "Sì — ogni sito include le basi della SEO on-page: titoli, meta descrizioni, struttura dei titoli e caricamento rapido."
+    },
+    {
+      "q": "Il sito funzionerà su mobile?",
+      "a": "Assolutamente. Tutti i siti sono realizzati con design responsive per telefoni, tablet e desktop."
+    },
+    {
+      "q": "Cosa devo preparare prima di iniziare?",
+      "a": "Idealmente: un logo, i testi delle pagine, le foto e degli esempi di siti che vi piacciono."
+    },
+    {
+      "q": "Offrite supporto dopo il lancio?",
+      "a": "Sì — le revisioni sono gratuite per 30 giorni. Sono disponibili anche pacchetti di manutenzione a pagamento."
+    },
+    {
+      "q": "Cosa succede se non sono soddisfatto del risultato?",
+      "a": "Prima del lancio c'è una fase di approvazione in cui potete richiedere modifiche. Lavoro finché non siete soddisfatti."
+    }
+  ]
+}

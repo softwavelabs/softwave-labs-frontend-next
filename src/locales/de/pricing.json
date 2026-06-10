@@ -1,6 +1,13 @@
 {
-  "name": "",
-  "serviceColumn": "Dienstleistung",
+  "bundlesTitle": "Pakete",
+  "bundlesSubtitle": "Einfache Pakete. Keine versteckten Kosten.",
+  "servicesTitle": "Leistungen",
+  "servicesSubtitle": "Einzelne Leistungen, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind.",
+  "contactTitle": "Brauchen Sie etwas Individuelles? Kontaktieren Sie uns über das Kontaktformular.",
+  "contactUsButton": "Kontakt aufnehmen",
+  "price": "ab {price} {currency}",
+  "getBundle": "{bundle}-Paket erwerben",
+  "serviceColumn": "Leistung",
   "scopeColumn": "Umfang",
   "priceColumn": "Preis"
 }

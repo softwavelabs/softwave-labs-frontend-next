@@ -1,0 +1,13 @@
+{
+  "bundlesTitle": "Forfaits",
+  "bundlesSubtitle": "Des forfaits simples. Sans frais cachés.",
+  "servicesTitle": "Services",
+  "servicesSubtitle": "Des services individuels adaptés à vos besoins spécifiques.",
+  "contactTitle": "Besoin d'une solution personnalisée ? Contactez-nous via le formulaire de contact.",
+  "contactUsButton": "Nous contacter",
+  "price": "à partir de {price} {currency}",
+  "getBundle": "Obtenir le forfait {bundle}",
+  "serviceColumn": "Service",
+  "scopeColumn": "Périmètre",
+  "priceColumn": "Prix"
+}
