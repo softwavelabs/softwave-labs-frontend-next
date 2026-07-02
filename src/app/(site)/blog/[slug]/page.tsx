@@ -163,7 +163,10 @@ const ArticlePage: React.FC = () => {
                 <header className="mb-6 mt-4">
                     <h1 className="text-3xl font-bold mb-2">{article.title}</h1>
 
-                    <h1 className="text-3xl font-bold mb-2">{article.author?.avatar?.url}</h1>
+                    {article.description && (
+                        <p className="text-lg text-gray-500 mb-4">{article.description}</p>
+                    )}
+
                     <div className="flex items-center gap-3 text-sm">
                         {article.author?.avatar?.url && (
                             <Image

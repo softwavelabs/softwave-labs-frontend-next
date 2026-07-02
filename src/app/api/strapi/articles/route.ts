@@ -3,6 +3,7 @@ import axios from "axios";
 
 export async function GET(req: NextRequest) {
     const locale = req.nextUrl.searchParams.get("locale") || "en";
+    const slug = req.nextUrl.searchParams.get("slug");
     const apiUrl = process.env.API_URL;
     const apiToken = process.env.API_TOKEN;
 
@@ -10,15 +11,25 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({ error: "API token missing" }, { status: 500 });
     }
 
+    const populateQuery =
+        "populate[author][populate]=avatar" +
+        "&populate[cover]=true" +
+        "&populate[category]=true" +
+        "&populate[blocks][populate]=*";
+
+    const slugFilter = slug ? `&filters[slug][$eq]=${encodeURIComponent(slug)}` : "";
+
     try {
-        const res = await axios.get(`${apiUrl}/api/articles?populate=*&locale=${locale}`, {
-            headers: { Authorization: `Bearer ${apiToken}` },
-        });
+        const res = await axios.get(
+            `${apiUrl}/api/articles?${populateQuery}${slugFilter}&locale=${locale}`,
+            { headers: { Authorization: `Bearer ${apiToken}` } }
+        );
 
         if (!res.data.data || res.data.data.length === 0) {
-            const resAll = await axios.get(`${apiUrl}/api/articles?populate=*&locale=all`, {
-                headers: { Authorization: `Bearer ${apiToken}` },
-            });
+            const resAll = await axios.get(
+                `${apiUrl}/api/articles?${populateQuery}${slugFilter}&locale=all`,
+                { headers: { Authorization: `Bearer ${apiToken}` } }
+            );
             return NextResponse.json(resAll.data.data);
         }
 
