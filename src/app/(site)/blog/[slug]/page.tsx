@@ -183,6 +183,10 @@ const ArticlePage: React.FC = () => {
                                 {article.author?.title && <span>{article.author.title}</span>}
                                 {article.createdAt && <span>{formatDate(article.createdAt)}</span>}
                             </div>
+
+                            {article.author?.description && (
+                                <p className="text-xs mt-1">{article.author.description}</p>
+                            )}
                         </div>
                     </div>
 
