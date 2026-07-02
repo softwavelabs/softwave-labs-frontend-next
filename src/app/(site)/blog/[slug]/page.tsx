@@ -231,33 +231,36 @@ const ArticlePage: React.FC = () => {
                     }
                 })}
 
-                {/*/!* Other articles *!/*/}
-                {/*{articles.length > 0 && (*/}
-                {/*    <aside className="py-16">*/}
-                {/*        <h2 className="text-2xl font-bold mb-4">{dictionary?.other_articles || "Other articles"}</h2>*/}
-                {/*        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">*/}
-                {/*            {articles*/}
-                {/*                .filter((a) => a.id !== article.id && a.slug)*/}
-                {/*                .slice(0, 4)*/}
-                {/*                .map((a) => (*/}
-                {/*                    <article key={a.id}>*/}
-                {/*                        <a href={`/blog/${a.slug}`}>*/}
-                {/*                            {a.cover?.url && (*/}
-                {/*                                <Image*/}
-                {/*                                    src={`${process.env.NEXT_PUBLIC_API_URL}${a.cover.url}`}*/}
-                {/*                                    alt={a.title}*/}
-                {/*                                    width={400}*/}
-                {/*                                    height={200}*/}
-                {/*                                    className="rounded-xl object-cover"*/}
-                {/*                                />*/}
-                {/*                            )}*/}
-                {/*                            <h3 className="font-bold mt-2">{a.title}</h3>*/}
-                {/*                        </a>*/}
-                {/*                    </article>*/}
-                {/*                ))}*/}
-                {/*        </div>*/}
-                {/*    </aside>*/}
-                {/*)}*/}
+                {/* Other articles */}
+                {articles.filter((a) => a.id !== article.id && a.slug).length > 0 && (
+                    <aside className="py-16">
+                        <h2 className="text-2xl font-bold mb-4">{dictionary?.other_articles || "Other articles"}</h2>
+                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                            {articles
+                                .filter((a) => a.id !== article.id && a.slug)
+                                .slice(0, 4)
+                                .map((a) => (
+                                    <article
+                                        key={a.id}
+                                        className="cursor-pointer"
+                                        onClick={() => router.push(`/blog/${a.slug}`)}
+                                    >
+                                        {a.cover?.url && (
+                                            <div className="relative w-full aspect-[2/1]">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_API_URL}${a.cover.url}`}
+                                                    alt={a.title}
+                                                    fill
+                                                    className="rounded-xl object-cover"
+                                                />
+                                            </div>
+                                        )}
+                                        <h3 className="font-bold mt-2">{a.title}</h3>
+                                    </article>
+                                ))}
+                        </div>
+                    </aside>
+                )}
             </div>
         </main>
     );
