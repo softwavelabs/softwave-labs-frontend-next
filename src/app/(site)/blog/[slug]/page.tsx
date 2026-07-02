@@ -163,10 +163,6 @@ const ArticlePage: React.FC = () => {
                 <header className="mb-6 mt-4">
                     <h1 className="text-3xl font-bold mb-2">{article.title}</h1>
 
-                    {article.description && (
-                        <p className="text-lg text-gray-500 mb-4">{article.description}</p>
-                    )}
-
                     <div className="flex items-center gap-3 text-sm">
                         {article.author?.avatar?.url && (
                             <Image
@@ -183,12 +179,16 @@ const ArticlePage: React.FC = () => {
                                 <p className="font-medium">{article.author.name}</p>
                             )}
 
-                            <div className="flex gap-2 text-xs text-gray-500">
+                            <div className="flex gap-2 text-xs">
                                 {article.author?.title && <span>{article.author.title}</span>}
                                 {article.createdAt && <span>{formatDate(article.createdAt)}</span>}
                             </div>
                         </div>
                     </div>
+
+                    {article.description && (
+                        <p className="text-lg mt-4">{article.description}</p>
+                    )}
                 </header>
 
 
