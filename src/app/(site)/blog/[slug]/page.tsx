@@ -187,7 +187,7 @@ const ArticlePage: React.FC = () => {
                     </div>
 
                     {article.description && (
-                        <p className="text-lg mt-4">{article.description}</p>
+                        <p className="text-base mt-4">{article.description}</p>
                     )}
                 </header>
 

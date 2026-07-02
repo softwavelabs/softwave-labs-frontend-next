@@ -46,7 +46,7 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
     const renderNode = (node: MarkdownNode, index: number) => {
         switch (node.type) {
             case "paragraph":
-                return <p key={index} className="mb-4">{renderChildren(node.children || [])}</p>;
+                return <p key={index} className="mb-4 text-sm">{renderChildren(node.children || [])}</p>;
 
             case "heading":
                 const level = Math.min(Math.max(node.level || 2, 1), 6);
@@ -58,7 +58,7 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
             case "list":
                 const ListTag = node.format === "ordered" ? "ol" : "ul";
                 return (
-                    <ListTag key={index} className={node.format === "ordered" ? "list-decimal ml-6 mb-4" : "list-disc ml-6 mb-4"}>
+                    <ListTag key={index} className={node.format === "ordered" ? "list-decimal ml-6 mb-4 text-sm" : "list-disc ml-6 mb-4 text-sm"}>
                         {node.children?.map((item: ListItemNode, i: number) => (
                             <li key={i}>{renderChildren(item.children || [])}</li>
                         ))}
