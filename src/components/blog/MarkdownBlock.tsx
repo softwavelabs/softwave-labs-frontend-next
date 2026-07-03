@@ -1,4 +1,6 @@
 import React, { JSX } from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import type {
     MarkdownNode,
     MarkdownChild,
@@ -16,6 +18,16 @@ interface MarkdownBlockProps {
         body: MarkdownNode[];
     };
 }
+
+const getPlainText = (children: MarkdownChild[]): string => {
+    return children
+        .map((child) => {
+            if (child.type === "text") return child.text || "";
+            if (child.type === "link") return getPlainText(child.children || []);
+            return "";
+        })
+        .join("");
+};
 
 const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
     const renderChildren = (children: MarkdownChild[]) => {
@@ -63,6 +75,19 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
                             <li key={i}>{renderChildren(item.children || [])}</li>
                         ))}
                     </ListTag>
+                );
+
+            case "code":
+                return (
+                    <SyntaxHighlighter
+                        key={index}
+                        language={node.language || "text"}
+                        style={oneDark}
+                        customStyle={{ marginBottom: "1rem", borderRadius: "0.375rem" }}
+                        className="text-sm"
+                    >
+                        {getPlainText(node.children || [])}
+                    </SyntaxHighlighter>
                 );
 
             default:

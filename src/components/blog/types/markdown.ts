@@ -39,7 +39,14 @@ export interface ListNode {
     children?: ListItemNode[];
 }
 
+export interface CodeNode {
+    type: "code";
+    language?: string;
+    children?: MarkdownChild[];
+}
+
 export type MarkdownNode =
     | ParagraphNode
     | HeadingNode
-    | ListNode;
+    | ListNode
+    | CodeNode;
