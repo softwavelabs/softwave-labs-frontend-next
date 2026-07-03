@@ -11,6 +11,8 @@ import MediaBlock from "@/components/blog/MediaBlock";
 
 import { useLocale } from "@/app/contexts/LocaleContext";
 import { useDictionary } from "@/app/hooks/useDictionary";
+import { useThemeStore } from "@/store/themeStore";
+import { getColorsByIndex } from "@/components/theme/Colors";
 
 interface Author {
     name: string;
@@ -77,6 +79,8 @@ const ArticlePage: React.FC = () => {
     const router = useRouter();
     const { locale } = useLocale();
     const { dictionary, loading: dictionaryLoading } = useDictionary(locale, "blog");
+    const activeIndex = useThemeStore((state) => state.activeIndex);
+    const { background, primary } = getColorsByIndex(activeIndex);
 
     const [article, setArticle] = useState<Article | null>(null);
     const [articles, setArticles] = useState<Article[]>([]);
@@ -114,7 +118,24 @@ const ArticlePage: React.FC = () => {
                 const res = await fetch(`/api/strapi/articles?locale=${locale}`);
                 if (!res.ok) throw new Error("Failed to fetch articles");
                 const data: Article[] = await res.json();
-                setArticles(data || []);
+                const combined = data || [];
+
+                const otherCount = combined.filter((a) => a.slug && a.slug !== slug).length;
+                if (otherCount < 4) {
+                    const resAll = await fetch(`/api/strapi/articles?locale=all`);
+                    if (resAll.ok) {
+                        const allData: Article[] = await resAll.json();
+                        const seen = new Set(combined.map((a) => a.id));
+                        for (const a of allData) {
+                            if (!seen.has(a.id)) {
+                                combined.push(a);
+                                seen.add(a.id);
+                            }
+                        }
+                    }
+                }
+
+                setArticles(combined);
             } catch (err) {
                 console.error(err);
             }
@@ -235,28 +256,27 @@ const ArticlePage: React.FC = () => {
                 {articles.filter((a) => a.id !== article.id && a.slug).length > 0 && (
                     <aside className="py-16">
                         <h2 className="text-2xl font-bold mb-4">{dictionary?.other_articles || "Other articles"}</h2>
-                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                             {articles
                                 .filter((a) => a.id !== article.id && a.slug)
                                 .slice(0, 4)
                                 .map((a) => (
-                                    <article
+                                    <div
                                         key={a.id}
-                                        className="cursor-pointer"
+                                        className="aspect-square cursor-pointer"
                                         onClick={() => router.push(`/blog/${a.slug}`)}
                                     >
-                                        {a.cover?.url && (
-                                            <div className="relative w-full aspect-[2/1]">
-                                                <Image
-                                                    src={`${process.env.NEXT_PUBLIC_API_URL}${a.cover.url}`}
-                                                    alt={a.title}
-                                                    fill
-                                                    className="rounded-xl object-cover"
-                                                />
-                                            </div>
-                                        )}
-                                        <h3 className="font-bold mt-2">{a.title}</h3>
-                                    </article>
+                                        <div
+                                            style={{
+                                                fontFamily: "DotGothic16 Regular",
+                                                backgroundColor: primary,
+                                                color: background,
+                                            }}
+                                            className="w-full h-full flex justify-center items-center relative"
+                                        >
+                                            <p className="z-10 text-lg text-center px-2">{a.title}</p>
+                                        </div>
+                                    </div>
                                 ))}
                         </div>
                     </aside>
