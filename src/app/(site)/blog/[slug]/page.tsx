@@ -244,7 +244,7 @@ const ArticlePage: React.FC = () => {
                                 <MarkdownBlock
                                     key={`rt-${block.id}-${index}`}
                                     block={block}
-                                    codeBlockColors={{ background: secondary ?? primary ?? background, text: background }}
+                                    codeBlockColors={{ background: primary ?? secondary ?? background, text: background }}
                                 />
                             );
                         case "media.quote":
