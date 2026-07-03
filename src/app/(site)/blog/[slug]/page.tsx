@@ -80,7 +80,7 @@ const ArticlePage: React.FC = () => {
     const { locale } = useLocale();
     const { dictionary, loading: dictionaryLoading } = useDictionary(locale, "blog");
     const activeIndex = useThemeStore((state) => state.activeIndex);
-    const { background, primary } = getColorsByIndex(activeIndex);
+    const { background, primary, secondary } = getColorsByIndex(activeIndex);
 
     const [article, setArticle] = useState<Article | null>(null);
     const [articles, setArticles] = useState<Article[]>([]);
@@ -240,7 +240,13 @@ const ArticlePage: React.FC = () => {
                 {article.blocks?.map((block, index) => {
                     switch (block.__component) {
                         case "media.rich-text":
-                            return <MarkdownBlock key={`rt-${block.id}-${index}`} block={block} />;
+                            return (
+                                <MarkdownBlock
+                                    key={`rt-${block.id}-${index}`}
+                                    block={block}
+                                    codeBlockColors={{ background: secondary ?? primary ?? background, text: background }}
+                                />
+                            );
                         case "media.quote":
                             return <QuoteBlock key={`q-${block.id}-${index}`} block={block} />;
                         case "media.slider":

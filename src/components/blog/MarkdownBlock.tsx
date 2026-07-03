@@ -11,11 +11,9 @@ interface MarkdownBlockProps {
     block: {
         body: MarkdownNode[];
     };
-}
-
-interface MarkdownBlockProps {
-    block: {
-        body: MarkdownNode[];
+    codeBlockColors?: {
+        background: string;
+        text: string;
     };
 }
 
@@ -29,7 +27,7 @@ const getPlainText = (children: MarkdownChild[]): string => {
         .join("");
 };
 
-const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
+const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block, codeBlockColors }) => {
     const renderChildren = (children: MarkdownChild[]) => {
         return children.map((child: MarkdownChild, index: number) => {
             if (child.type === "text") {
@@ -40,7 +38,17 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
                 if (child.italic) text = <em key={index}>{text}</em>;
                 if (child.underline) text = <u key={index}>{text}</u>;
                 if (child.strikethrough) text = <s key={index}>{text}</s>;
-                if (child.code) text = <code key={index} className="bg-gray-100 px-1 rounded">{text}</code>;
+                if (child.code) {
+                    text = (
+                        <code
+                            key={index}
+                            className="px-1 rounded"
+                            style={codeBlockColors ? { backgroundColor: codeBlockColors.background, color: codeBlockColors.text } : undefined}
+                        >
+                            {text}
+                        </code>
+                    );
+                }
 
                 return <React.Fragment key={index}>{text}</React.Fragment>;
             } else if (child.type === "link") {
@@ -63,8 +71,6 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
             case "heading":
                 const level = Math.min(Math.max(node.level || 2, 1), 6);
                 const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-                console.log(level);
-                console.log(Tag);
                 return <Tag key={index} className={`font-bold mb-2 mt-4 text-4xl`}>{renderChildren(node.children || [])}</Tag>;
 
             case "list":
@@ -83,7 +89,15 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block }) => {
                         key={index}
                         language={node.language || "text"}
                         style={oneDark}
-                        customStyle={{ marginBottom: "1rem", borderRadius: "0.375rem" }}
+                        customStyle={{
+                            marginBottom: "1rem",
+                            borderRadius: "0.375rem",
+                            ...(codeBlockColors && {
+                                backgroundColor: codeBlockColors.background,
+                                color: codeBlockColors.text,
+                            }),
+                        }}
+                        codeTagProps={codeBlockColors ? { style: { color: codeBlockColors.text } } : undefined}
                         className="text-sm"
                     >
                         {getPlainText(node.children || [])}
