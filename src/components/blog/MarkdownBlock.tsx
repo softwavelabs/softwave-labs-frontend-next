@@ -68,10 +68,19 @@ const MarkdownBlock: React.FC<MarkdownBlockProps> = ({ block, codeBlockColors })
             case "paragraph":
                 return <p key={index} className="mb-4 text-sm">{renderChildren(node.children || [])}</p>;
 
-            case "heading":
+            case "heading": {
                 const level = Math.min(Math.max(node.level || 2, 1), 6);
                 const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-                return <Tag key={index} className={`font-bold mb-2 mt-4 text-4xl`}>{renderChildren(node.children || [])}</Tag>;
+                const sizeByLevel: Record<number, string> = {
+                    1: "text-4xl",
+                    2: "text-3xl",
+                    3: "text-2xl",
+                    4: "text-xl",
+                    5: "text-lg",
+                    6: "text-base",
+                };
+                return <Tag key={index} className={`font-bold mb-2 mt-4 ${sizeByLevel[level]}`}>{renderChildren(node.children || [])}</Tag>;
+            }
 
             case "list":
                 const ListTag = node.format === "ordered" ? "ol" : "ul";
