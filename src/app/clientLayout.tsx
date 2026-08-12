@@ -2,7 +2,7 @@
 
 import { useThemeStore} from "@/store/themeStore";
 import { getColorsByIndex} from "@/components/theme/Colors";
-import CookieConsentInit from "@/components/theme/CookieConsentInit";
+import CookieBanner from "@/components/theme/CookieBanner";
 import {ReactNode} from "react";
 
 type Props = {
@@ -19,7 +19,7 @@ export default function ClientLayout({ children }: Props) {
     return (
         <div style={{ background, color: text }}>
             {children}
-            <CookieConsentInit theme={{ background, text, primary, secondary }} />
+            <CookieBanner theme={{ background, text, primary, secondary }}/>
         </div>
     );
 }
