@@ -7,10 +7,10 @@ import { useLocale } from "@/app/contexts/LocaleContext";
 
 import en from "@/locales/en/cookies.json";
 import pl from "@/locales/pl/cookies.json";
-import de from "@/locales/de/cookies.json";
-import fr from "@/locales/fr/cookies.json";
-import es from "@/locales/es/cookies.json";
-import it from "@/locales/it/cookies.json";
+// import de from "@/locales/de/cookies.json";
+// import fr from "@/locales/fr/cookies.json";
+// import es from "@/locales/es/cookies.json";
+// import it from "@/locales/it/cookies.json";
 
 type CookieDict = {
     title: string;
@@ -27,7 +27,7 @@ type CookieDict = {
     back: string;
 };
 
-const dictionaries: Record<string, CookieDict> = { en, pl, de, fr, es, it };
+const dictionaries: Record<string, CookieDict> = { en, pl /*, de, fr, es, it */ };
 
 function buildTranslation(t: CookieDict) {
     return {
