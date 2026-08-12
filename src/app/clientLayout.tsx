@@ -2,7 +2,7 @@
 
 import { useThemeStore} from "@/store/themeStore";
 import { getColorsByIndex} from "@/components/theme/Colors";
-import CookieBanner from "@/components/theme/CookieBanner";
+import CookieConsentInit from "@/components/theme/CookieConsentInit";
 import {ReactNode} from "react";
 
 type Props = {
@@ -13,13 +13,13 @@ export default function ClientLayout({ children }: Props) {
         (state) => state.activeIndex ?? 0
     );
 
-    const { background, text, primary, secondary } =
+    const { background, text } =
         getColorsByIndex(activeIndex);
 
     return (
         <div style={{ background, color: text }}>
             {children}
-            <CookieBanner theme={{ background, text, primary, secondary }}/>
+            <CookieConsentInit />
         </div>
     );
 }
