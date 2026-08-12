@@ -13,13 +13,13 @@ export default function ClientLayout({ children }: Props) {
         (state) => state.activeIndex ?? 0
     );
 
-    const { background, text } =
+    const { background, text, primary, secondary } =
         getColorsByIndex(activeIndex);
 
     return (
         <div style={{ background, color: text }}>
             {children}
-            <CookieConsentInit />
+            <CookieConsentInit theme={{ background, text, primary, secondary }} />
         </div>
     );
 }

@@ -67,7 +67,18 @@ const translations = Object.fromEntries(
     Object.entries(dictionaries).map(([locale, dict]) => [locale, buildTranslation(dict)])
 );
 
-const CookieConsentInit = () => {
+interface Theme {
+    background: string;
+    text?: string;
+    primary?: string;
+    secondary?: string;
+}
+
+interface Props {
+    theme?: Theme;
+}
+
+const CookieConsentInit = ({ theme }: Props) => {
     const { locale } = useLocale();
     const initialized = useRef(false);
 
@@ -84,7 +95,7 @@ const CookieConsentInit = () => {
             guiOptions: {
                 consentModal: {
                     layout: "box",
-                    position: "bottom left",
+                    position: "bottom right",
                 },
                 preferencesModal: {
                     layout: "box",
@@ -103,6 +114,47 @@ const CookieConsentInit = () => {
             },
         });
     }, [locale]);
+
+    useEffect(() => {
+        if (!theme) return;
+
+        const bg = theme.background;
+        const text = theme.text || "#000";
+        const accent = theme.primary || text;
+
+        const vars: Record<string, string> = {
+            "--cc-bg": bg,
+            "--cc-primary-color": text,
+            "--cc-secondary-color": text,
+            "--cc-modal-border-radius": "0",
+            "--cc-btn-border-radius": "0",
+            "--cc-separator-border-color": text,
+            "--cc-link-color": accent,
+            "--cc-btn-primary-bg": text,
+            "--cc-btn-primary-color": bg,
+            "--cc-btn-primary-border-color": text,
+            "--cc-btn-primary-hover-bg": accent,
+            "--cc-btn-primary-hover-color": bg,
+            "--cc-btn-primary-hover-border-color": accent,
+            "--cc-btn-secondary-bg": bg,
+            "--cc-btn-secondary-color": text,
+            "--cc-btn-secondary-border-color": text,
+            "--cc-btn-secondary-hover-bg": text,
+            "--cc-btn-secondary-hover-color": bg,
+            "--cc-btn-secondary-hover-border-color": text,
+            "--cc-toggle-on-bg": accent,
+            "--cc-toggle-off-bg": theme.secondary || "#66748c",
+            "--cc-toggle-on-knob-bg": bg,
+            "--cc-toggle-off-knob-bg": bg,
+            "--cc-cookie-category-block-bg": bg,
+            "--cc-cookie-category-block-border": text,
+            "--cc-cookie-category-expanded-block-bg": bg,
+        };
+
+        Object.entries(vars).forEach(([key, value]) => {
+            document.documentElement.style.setProperty(key, value);
+        });
+    }, [theme?.background, theme?.text, theme?.primary, theme?.secondary]);
 
     return null;
 };
