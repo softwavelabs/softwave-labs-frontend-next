@@ -94,8 +94,8 @@ const CookieConsentInit = ({ theme }: Props) => {
         CookieConsent.run({
             guiOptions: {
                 consentModal: {
-                    layout: "box",
-                    position: "bottom right",
+                    layout: "bar",
+                    position: "bottom",
                 },
                 preferencesModal: {
                     layout: "box",
