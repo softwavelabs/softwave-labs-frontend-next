@@ -54,9 +54,9 @@ const Showcase: React.FC<ShowcaseProps> = ({ data, theme }) => {
                     justifyContent: "center",
                 }}
             >
-                <div sx={{ width: "80%" }}>
+                <div sx={{ width: ["95%", "80%", "80%"] }}>
                     <h1
-                        className="text-4xl md:text-[55px] lg:text-[55px]"
+                        className="text-[clamp(1.1rem,6vw,2.25rem)] whitespace-nowrap md:text-[55px] md:whitespace-normal lg:text-[55px] lg:whitespace-normal"
                         sx={{
                             fontFamily: "NeueMontreal Bold",
                             lineHeight: 1.5,
