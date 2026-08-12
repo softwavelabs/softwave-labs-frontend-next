@@ -56,7 +56,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ data, theme }) => {
             >
                 <div sx={{ width: ["95%", "80%", "80%"] }}>
                     <h1
-                        className="text-[clamp(1.1rem,6vw,2.25rem)] whitespace-nowrap md:text-[55px] md:whitespace-normal lg:text-[55px] lg:whitespace-normal"
+                        className="text-[clamp(1.5rem,8vw,2.25rem)] whitespace-nowrap md:text-[55px] md:whitespace-normal lg:text-[55px] lg:whitespace-normal"
                         sx={{
                             fontFamily: "NeueMontreal Bold",
                             lineHeight: 1.5,
