@@ -21,17 +21,49 @@ function getLocale(request: NextRequest): string {
     return defaultLocale;
 }
 
+function buildCsp(nonce: string): string {
+    return `
+        default-src 'self';
+        script-src 'self' 'nonce-${nonce}' 'strict-dynamic';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: blob:;
+        font-src 'self';
+        connect-src 'self';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        frame-ancestors 'none';
+        upgrade-insecure-requests;
+    `.replace(/\s{2,}/g, ' ').trim();
+}
+
 export function middleware(request: NextRequest) {
     const locale = getLocale(request);
-    const response = NextResponse.next();
+    const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
+    const csp = buildCsp(nonce);
+    const isHttps = request.nextUrl.protocol === 'https:';
+
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set('x-nonce', nonce);
+    requestHeaders.set('Content-Security-Policy', csp);
+
+    const response = NextResponse.next({
+        request: { headers: requestHeaders },
+    });
 
     response.cookies.set('NEXT_LOCALE', locale, {
         path: '/',
         maxAge: 60 * 60 * 24 * 365,
         sameSite: 'lax',
+        secure: isHttps,
     });
 
     response.headers.set('x-locale', locale);
+    response.headers.set('Content-Security-Policy', csp);
+    response.headers.set('X-Frame-Options', 'DENY');
+    response.headers.set('X-Content-Type-Options', 'nosniff');
+    response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+    response.headers.set('Cross-Origin-Resource-Policy', 'same-origin');
 
     return response;
 }
