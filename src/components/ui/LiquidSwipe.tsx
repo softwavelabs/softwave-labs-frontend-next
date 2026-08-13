@@ -94,6 +94,7 @@ const Page: React.FC<PageProps> = ({
                                        gone = false,
                                    }) => {
     const [isGone, setGone] = useState<boolean>(gone);
+    const [isSettled, setSettled] = useState<boolean>(gone);
 
     const initializedRef = useRef(false);
 
@@ -194,6 +195,7 @@ const Page: React.FC<PageProps> = ({
                             d: getPath(START_Y, 0, width, height),
                         });
                         setActive(index);
+                        setSettled(true);
                     }, 240);
                 } else {
                     setDvalueApi.start({
@@ -229,10 +231,14 @@ const Page: React.FC<PageProps> = ({
                 theme={theme}
                 {...bind()}
                 isGone={isGone}
-                style={{
-                    clipPath: `url(#clipping${index})`,
-                    WebkitClipPath: `url(#clipping${index})`,
-                }}
+                style={
+                    isSettled
+                        ? undefined
+                        : {
+                            clipPath: `url(#clipping${index})`,
+                            WebkitClipPath: `url(#clipping${index})`,
+                        }
+                }
             >
                 {children}
             </PageDiv>
